@@ -1,0 +1,117 @@
+\documentclass{thesisreport}
+
+
+\begin{document}
+
+ \include{thesisfront}  
+ 
+  \section*{Abstract}
+   
+ Serial and parallel robots are widley used in industry in an increasing number of applications. Serial robots are the simplest and widely used thanks to their structure, composed of links connected in series by actuated joints. This design as simple and well known molleding but it also comes with drawbacks. Their inertia plays an important role in their modelling due to the weight of the actuators mounted on the arm. and the links. They must be stiff enought to sustain the structure and thus their wieght is considerably high.
+ 
+ On the other hand, parallel robots have closed loop shape. Their shape allows to place the actuators in the base only. The moving parts result less demanding in terms of inertia. However, the multimple joints involved require small assembly tolerances and bring additional maintenance costs.
+ 
+ For what concerns the continuum parallel robots, they consist in an assembly of slender beams with some platforms. The beams are considered as the links in these robots, coupled togheter by the platform, or disks. They are placed at least on the top and bottom of the robot, providing place for the end effector and actuators respectively. However, there could be other disks placed in the robot body providing structural constraints for the beams. The robot links are assumed as highly deformable. The motion of these robots is due to the deformation of their beams assembly. 
+ 
+ This assembly brings reveral advantages to the robot performances. First the lightweight body of the robot has a smaller inertia compared to the other kinds of robots, resulting in a more precise and less energy-consuming movements. Secondly, the robot assembly results easier as less joints are involved in the process. Additionally, the high deformabilty of the rods enhances the robot safety in presence of humans. In fact, if a human happens to be in the robot trajectory, the rod hitting the human will bend, reducing the possible human damage. Finally, these robots have the possibility to be mignaturized. A miniaturization is beneficial where small and precise operations are required, such as in a surgery or other medical applications. 
+ 
+ These robots are thus very reliable, safe and versatile. The main drawback comes with their modelling. There is not an analitycal model and thus it as to be computed numerically in each position and configuration. In the literature there are several method proposed to solve this problem. In the following, the investigated method are presented and discussed. 
+ 
+ 
+ \newpage
+ 
+ \section*{Acknowledgements}
+ I would like to thank first Dr. Sébastien Briot and professor Olivier Kermorgant for having developed this thesis proposal accordingly to my willing, and thus giving me the opportunity to work under their stimulating supervision. 
+ 
+ I want also to thank...
+ 
+  \section*{Abbreviations}
+ \begin{tabular}{cp{0.8\textwidth}}
+ 	\textbf{PCR}	&	Parallel Continuum Robot			\\
+ 	\textbf{ODE}	&	Odinary Differential Equation		\\
+ 	\textbf{PDE}	&	Partial Differential Equation		\\
+ 	\textbf{BVP}	&	Boundary Value Problem				\\
+ 	\textbf{ICA}	&	Isogeometric Collocation Analysis	\\
+ 	\textbf{NURBS}	&	Non-Uniform Rational B-Splines		\\
+ 	\textbf{DGM}	&	Direct Geometric Model				\\
+ 	\textbf{IGM}	&	Inverse Geometric Model				\\
+ 	\textbf{DDM}	&	Direc Dynamic Model					\\
+ 	\textbf{IDM}	&	Inverse Dynamic Model				\\
+ \end{tabular}
+
+ \tableofcontents
+ 
+ 
+ \chapter*{Introduction}
+ \addcontentsline{toc}{chapter}{Introduction}	 % non-numbered chapters do not appear in table of contents by default
+ The aim of this master thesis is to investigate and propose a general simulator for continuum parallel robots. The simulator must be able to handle different kinds of these robots. They may change not only in size, but they can be assembled in varius ways \cite{bryson_toward_2014}. In the literature, two assemblies are commonly discussed. The more common is the Stewart-Gough PCR. Presented in its static modelling by \cite{till_efficient_2015} \cite{black_parallel_2018} while Till et al also investigated the dynamic modelling in \cite{till_real-time_2019}. They also investigated a tendon-driven robot and a fluidic soft robot in \cite{till_real-time_2019}. These different robots require modelling with specific care to individual features, to better represent their characteristic behavior. 
+ 
+ In order to correctly simulate the robot, the simulator must solve the different modelling for the robot. In the literature, the approach are alredy investigated by Black et al who developed the DGM for a Stewart-Gough robot in \cite{black_parallel_2018}. For this robot Till et al presented the solution for the IGM and IDM in \cite{till_real-time_2019} and \cite{till_efficient_2015} respectively.
+ 
+ For the graphical interface, the simulator will rely on Gazebo \cite{koenig_design_2004}\cite{noauthor_gazebo_nodate}, a widely use physical simulator in the ROS framework \cite{noauthor_rosorg_nodate}. The modelling problem corresponds to find the actuator positions and wrenches, which are the inputs, to obtain the desired output. In the DGM case, we want to obtain the end effector position given the input. In the IGM case, we want to calculate the input in order to obtain a given output: position or wrench in the end effctor. On the other hand, when we consider the dinamics of the robot, when computing the input/output relation, the dynamic of the robot plays an important role. 
+ 
+ For solving such problems, in the literature many ad oc solution are presented \cite{till_efficient_2015}\cite{black_parallel_2018}\cite{till_real-time_2019}. The solutions are specifically developed for the robot observed in the study, with a poor prospective of generalization. This master thesis aims to define a general simulator which can be use to simulate these robots indipendently by they structure. 
+ 
+ \chapter{State of the art}
+ Generally speaking, in order to solve the modelling problem, each approach has to solve the static or dynamic for each beam, or rod, and the assembly. This solution corresponds to the configuration at equilibrium under the external load, the actuators action and the assembly constraints. To model each rod the CSosserat theory is widely used in literature, as in the work of Black\cite{black_parallel_2018}\cite{black_modeling_2017} and Till\cite{till_efficient_2015}\cite{till_real-time_2019}. In the Cosserat theory, each rod is described geometrically by its centerline position and orientation. It corresponds to a 1D body where for every coordinate in the arc-lenght there is a corresponding cross section position and orientation. They are defined with respect to a reference frame external to the rod body, expressing their coordinates in an Euclidean space \cite{selig_geometric_2005}. 
+ In each cross section, static considerations link the external forces, punctual or distributed, to the internal forces. The rod deformation is described by the influences of these forces and its material and geometric properties. At the tip and base, the assembly contrains and the applied loads are consist in a BVP. The joints implemented and their position with respect to the end effector frame plays an important role in the BVP, as explained in Black et al \cite{black_parallel_2018}. Depending on the joint type, one or more components of the internal forces must be null or assume a value directly depending on the exteranl wrench applied on or by the end effector.  
+ 
+ In the following, the approaches that have been investigated in literature are presented and discussed. 
+ 
+ \section{Shooting Method}
+ The shooting method is widely used in the literature \cite{black_parallel_2018}\cite{florian_geometrically_2020}\cite{black_modeling_2017}. This modelling allows to simulate PCRs with high precision requirements, as for surgical operations described by Black et al in \cite{black_modeling_2017}. Moreover, it is possible to evaluate robot performances in simulation as Black et al explained in \cite{black_parallel_2018} and greater detail in \cite{black_modeling_2017}. The shooting method is an iterative process. It is based on a non linear solver. The one implemented is the Levenberg-Marquardt algorithm which is widley discussed in literature. An introduction of concept and properties is presented in\cite{lourakis_brief_nodate}. 
+ The solver is used for minimizing the value of a cost function\cite{florian_geometrically_2020}. This function is defined as a row vector which rows contains equilibrium equations, geometrical constrains and material property relations with the loads. In the equilibrium configuration, the cost function is, on virtually, equal to zero, as all the equations converged. 
+ The shooting method consists of a development of guesses. Starting from some initial conditions, the method evaluates the Jacobian relationship between the cost function and the unknown variables, that consist of the solution for the current configuration. Using this Jacobian relation, the non linear solver computes another guess. This iterative process stops when it converges to an equilibrium solution or when it reaches maximum number of iterations. For computing the Jacobian relationship, the process could be broke in different threads. As discussed in \cite{till_efficient_2015} the procedure can be parallelized, obtaining appreaciable improvements in terms of computational time.  
+ 
+ When considering the dynamic modelling, the complexity increases. The equilibrium euqations and the BVP have now to account for the rods and their assembly dynamics. Quantities like the centerline position and cross section orientation now depend both on the arc-lenght coordinate and time. Simlarly, all the other vector fields now are funtion of time and thus their time derivative must be considered. 
+ 
+ The system of equation becomes a PDE, having derivatives on the arc-lenght and time. Till et al \cite{till_real-time_2019} proposed a solution to replace the time derivative with an implicit time differentiation formula. It consists in replacing the time derivative by a sum of the current value and the history of previous values. This allows an intutive application of the shooting method. As it changes only the current guess for the values, leaving apart the previous parameters lumped in the history term simplifies the notation. The shooting method will then change only the current guess and, at the convercenge of the solution, it will became a part of the history as well. 
+ 
+ A critical aspect of this solution is the choice of the timestep. Too small timestep will bring high numerical cancellations. On the other hand, timestep of a too big size lead to instability. 
+ 
+ This method is able to find non stable configurations and to model the robot reaching the closeby stable configuration. On the other hand, it is very sensible to the initial conditions. This sensitivity may lead to problem when for slightly different initial conditions the final solutions are different. 
+ 
+ 
+ \section{Strain Parametrization}
+ 
+ This approach was proposed by Boyer et al in 2019 \cite{boyer_dynamics_2019}. They developed a modelling for a slender body deforming and moving in space, treated as an internally actuated Cosserat beam. This modelling can be reduced to different study cases. 
+ 
+ It integrates the Cosserat theory with the notion of allowed and prohibited twists. They depend on the assumption on the deformation of the rod. Being justified by the theory of slender bodies, we could neglect the shear deformation.
+ 
+ The configuration space of the floating beam is the composition of the configuration space of the beam base frame and the configuration space of its shape. This last space is a functional one: an infinite dimensional space for the parametrized curve. 
+ This formulation is relaxed by the introduction of the allowed motions, their number limits the dimension of the beam shape configuration space. 
+ The cmposition of the two configuration spaces is then discretized using a matrix of basis functions and a vector of strain generalized coordinates. 
+ 
+ Boyer et al\cite{boyer_dynamics_2019} developed the Lagrangian model for this the floating beam which is similar to the one for serial robots. 
+ In order to use the model on the PCR, all the terms have to be computed numerically at each time step. In Boyer et al work\cite{boyer_dynamics_2019} they propose to obtain the PCR Lagrangian model starting from a similar one but applied to a virtual serial mechanism. They use one of the algorithm proposed by Walker et al\cite{walker_efficient_1982}. The idea is to reconstruct all the matrices of the model with an interative process. To this end, algorithms for computing the forward and inverse dynamics are presented and detailed in Featherstone's book \cite{featherstone_rigid_2008}.
+
+ 
+ \section{Isogeometric Collocation Analysis}
+ The ICA is a geometrically exact method: no approximation are applied on the geometry of the rod. It allows to find the equilibrium configurations without numerically integrate the rod in its arc-lenght. 
+ It relies on the properties of NURBS curves\cite{piegl_nurbs_1997}. NURBS curves can intuitively represent any vector field such as position or orientation in space. These curves are defined with a set of control points, that are points in the vector space, and some breakpoints and basis functions depending on the coordinate along the curve.
+ 
+  The breackpoints are a set of points called knots placed along the curve, they define the range of activation for each basis functions. The basis functions link the influence of each control points to the curve as a function of the position along it. The basis function are recursively computed starting with a zero degree polinomial: it has a constant value in its range of definition and is zero outside from it. Basis function of greater order are define on top on previous ones. 
+  
+ As explained in the book of Piegl \cite{piegl_nurbs_1997} these curves have properties such as differentiabily and affine transformations. The differentiability is ensured by the continuity of the higher order basis functions while affine transformations to the curve can be obtained appllying the same transformations on the control points.
+ 
+ These curves can describe any vector field. In literature\cite{weeger_isogeometric_2017-1}, they are used to describe the centerline position and cross-section orientation of a slender body. In order to account for the equlibrium equations we define new points along the curve: the collocation points. The equilibrium equations and constrains are evaluated at these points. The results of these computation defines a cost function that requires a non linear solver. The control points are the deegrees of freedom for minimizing the cost function.
+ 
+ Additional features can be modeled with this approach. It is possible to determine frinctionless contact, and its effects, as presented by Weeger et al\cite{weeger_isogeometric_2017} either between two different rods or a rod with itself. The studies on the contact were extended in the frictional case in \cite{weeger_isogeometric_2018}. They also present a modelling for varying properties of the rod \cite{weeger_fully_2018}. Material and geometrical properties may vary along the rod axis or transversally in the rod section. Moreover, they proposed a modelling for the rods coupling \cite{weeger_isogeometric_2017-1}
+ 
+ When it comes to deal with the rod dynamics, the method requires integration, defining thus an ODE system. The time derivative requires a discretization system, Weeger et al \cite{weeger_isogeometric_2018} propose the Crank-Nicolson model, proving its performances in numerical applications. 
+
+
+ \chapter*{Conclusion}
+ \addcontentsline{toc}{chapter}{Conclusion}
+ Having investigated these methods, it is necessary to define an approach leading to the realization of the simulator. After having established the method or the combination of methods to implement, the simulation of a single static rod will be addressed. 
+ 
+ 
+
+ \addcontentsline{toc}{chapter}{Bibliography}
+ 
+ \bibliography{../biblio}
+ 
+ 
+ 
+ 
+\end{document}

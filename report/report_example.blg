@@ -1,0 +1,88 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: report_example.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+A level-1 auxiliary file: thesisfront.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: ../biblio.bib
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty year in bryson_toward_2014
+Warning--empty year in till_efficient_2015
+Warning--empty journal in black_parallel_2018
+Warning--empty year in black_parallel_2018
+Warning--empty journal in till_real-time_2019
+Warning--empty year in till_real-time_2019
+Warning--empty year in koenig_design_2004
+Warning--empty journal in black_modeling_2017
+Warning--empty year in black_modeling_2017
+Warning--empty year in selig_geometric_2005
+Warning--empty journal in florian_geometrically_2020
+Warning--empty year in florian_geometrically_2020
+Warning--empty journal in lourakis_brief_nodate
+Warning--empty year in lourakis_brief_nodate
+Warning--empty note in boyer_dynamics_2019
+Warning--empty journal in walker_efficient_1982
+Warning--empty year in walker_efficient_1982
+Warning--empty year in featherstone_rigid_2008
+Warning--empty year in piegl_nurbs_1997
+Warning--empty journal in weeger_isogeometric_2017-1
+Warning--empty year in weeger_isogeometric_2017-1
+Warning--empty journal in weeger_isogeometric_2017
+Warning--empty year in weeger_isogeometric_2017
+Warning--empty journal in weeger_isogeometric_2018
+Warning--empty year in weeger_isogeometric_2018
+Warning--empty journal in weeger_fully_2018
+Warning--empty year in weeger_fully_2018
+
+Done.
+You've used 19 entries,
+            4039 wiz_defined-function locations,
+            909 strings with 11040 characters,
+and the built_in function-call counts, 12421 in all, are:
+= -- 975
+> -- 273
+< -- 108
++ -- 146
+- -- 43
+* -- 644
+:= -- 1907
+add.period$ -- 36
+call.type$ -- 19
+change.case$ -- 21
+chr.to.int$ -- 258
+cite$ -- 46
+duplicate$ -- 883
+empty$ -- 960
+format.name$ -- 56
+if$ -- 2774
+int.to.chr$ -- 0
+int.to.str$ -- 19
+missing$ -- 148
+newline$ -- 106
+num.names$ -- 17
+pop$ -- 395
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 937
+stack$ -- 0
+substring$ -- 612
+swap$ -- 676
+text.length$ -- 22
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 19
+warning$ -- 27
+while$ -- 57
+width$ -- 21
+write$ -- 208
+(There were 27 warnings)
