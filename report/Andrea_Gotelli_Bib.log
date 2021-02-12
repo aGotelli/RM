@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  12 FEB 2021 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  12 FEB 2021 15:30
 entering extended mode
-**./report_example.tex
-(report_example.tex
+**./Andrea_Gotelli_Bib.tex
+(Andrea_Gotelli_Bib.tex
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-12-07> xparse <2020-03-03> (thesisreport.cls
 Document Class: thesisreport 09/09/2010, v1.0
@@ -354,8 +354,8 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count284
 \l__pdf_internal_box=\box53
 )
-(report_example.aux (thesisfront.aux))
-\openout1 = `report_example.aux'.
+(Andrea_Gotelli_Bib.aux (thesisfront.aux))
+\openout1 = `Andrea_Gotelli_Bib.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
@@ -408,9 +408,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
- (report_example.out) (report_example.out)
+ (Andrea_Gotelli_Bib.out) (Andrea_Gotelli_Bib.out)
 \@outlinefile=\write3
-\openout3 = `report_example.out'.
+\openout3 = `Andrea_Gotelli_Bib.out'.
 
 
 *geometry* driver: auto-detecting
@@ -471,9 +471,9 @@ l.21  \newpage
                [2
 
 
-] [3] (report_example.toc)
+] [3] (Andrea_Gotelli_Bib.toc)
 \tf@toc=\write4
-\openout4 = `report_example.toc'.
+\openout4 = `Andrea_Gotelli_Bib.toc'.
 
  [4
 
@@ -501,7 +501,7 @@ Overfull \hbox (3.59251pt too wide) in paragraph at lines 106--107
  approach leading to the realization
  []
 
-(report_example.bbl [9
+(Andrea_Gotelli_Bib.bbl [9
 
 ]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 6
@@ -515,25 +515,25 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
  [10
 
 ]) [11]
-(report_example.aux (thesisfront.aux))
-Package rerunfilecheck Info: File `report_example.out' has not changed.
+(Andrea_Gotelli_Bib.aux (thesisfront.aux))
+Package rerunfilecheck Info: File `Andrea_Gotelli_Bib.out' has not changed.
 (rerunfilecheck)             Checksum: 0570EC5054D6C9CFA9F9D4B8E082A5E7;401.
  ) 
 Here is how much of TeX's memory you used:
  8066 strings out of 481629
- 119589 string characters out of 2918595
- 429378 words of memory out of 3000000
+ 119473 string characters out of 2918595
+ 429398 words of memory out of 3000000
  24720 multiletter control sequences out of 15000+200000
  410849 words of font info for 54 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 80i,10n,85p,941b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 80i,10n,85p,945b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
 </home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmcsc10.p
 fb></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pf
 b>
-Output written on report_example.pdf (12 pages, 121797 bytes).
+Output written on Andrea_Gotelli_Bib.pdf (12 pages, 121797 bytes).
 PDF statistics:
  201 PDF objects out of 1000 (max. 8388607)
  39 named destinations out of 1000 (max. 500000)
