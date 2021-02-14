@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  12 FEB 2021 15:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  13 FEB 2021 10:38
 entering extended mode
 **./Andrea_Gotelli_Bib.tex
 (Andrea_Gotelli_Bib.tex
@@ -467,7 +467,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.21  \newpage
+l.13  \newpage
                [2
 
 
@@ -479,29 +479,29 @@ l.21  \newpage
 
 ] [5
 
-]
+] [6]
 Chapter 1.
 
-Overfull \hbox (11.18642pt too wide) in paragraph at lines 66--67
+Overfull \hbox (11.18642pt too wide) in paragraph at lines 74--75
 []\OT1/cmr/m/n/12 When considering the dynamic modelling, the complexity increa
 ses. The equilibrium euqations
  []
 
-[6
+[7
 
-] [7]
-Overfull \hbox (8.50589pt too wide) in paragraph at lines 99--100
+] [8]
+Overfull \hbox (8.50589pt too wide) in paragraph at lines 107--108
 []\OT1/cmr/m/n/12 Additional features can be modeled with this approach. It is 
 possible to determine frinctionless
  []
 
-[8]
-Overfull \hbox (3.59251pt too wide) in paragraph at lines 106--107
+[9]
+Overfull \hbox (3.59251pt too wide) in paragraph at lines 114--115
 \OT1/cmr/m/n/12 Having investigated these methods, it is necessary to define an
  approach leading to the realization
  []
 
-(Andrea_Gotelli_Bib.bbl [9
+(Andrea_Gotelli_Bib.bbl [10
 
 ]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 6
@@ -512,18 +512,18 @@ File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
- [10
+ [11
 
-]) [11]
+]) [12]
 (Andrea_Gotelli_Bib.aux (thesisfront.aux))
 Package rerunfilecheck Info: File `Andrea_Gotelli_Bib.out' has not changed.
-(rerunfilecheck)             Checksum: 0570EC5054D6C9CFA9F9D4B8E082A5E7;401.
+(rerunfilecheck)             Checksum: 60467C1E79591B4F684E814424D99434;533.
  ) 
 Here is how much of TeX's memory you used:
- 8066 strings out of 481629
- 119473 string characters out of 2918595
- 429398 words of memory out of 3000000
- 24720 multiletter control sequences out of 15000+200000
+ 8071 strings out of 481629
+ 119528 string characters out of 2918595
+ 429401 words of memory out of 3000000
+ 24722 multiletter control sequences out of 15000+200000
  410849 words of font info for 54 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  80i,10n,85p,945b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -533,9 +533,9 @@ fb></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pf
 b>
-Output written on Andrea_Gotelli_Bib.pdf (12 pages, 121797 bytes).
+Output written on Andrea_Gotelli_Bib.pdf (13 pages, 123913 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 42 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
