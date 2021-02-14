@@ -21,10 +21,12 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{bryson_toward_2014}
-C.~E. Bryson and D.~C. Rucker, ``Toward parallel continuum manipulators,'' in
-  \emph{2014 {IEEE} International Conference on Robotics and Automation
-  ({ICRA})}, pp. 778--785, {ISSN}: 1050-4729.
+\bibitem{black_modeling_2017}
+\BIBentryALTinterwordspacing
+C.~Black, ``Modeling, analysis, force sensing and control of continuum robots
+  for minimally invasive surgery.'' [Online]. Available:
+  \url{https://trace.tennessee.edu/utk_graddiss/4443}
+\BIBentrySTDinterwordspacing
 
 \bibitem{till_efficient_2015}
 J.~Till, C.~E. Bryson, S.~Chung, A.~Orekhov, and D.~C. Rucker, ``Efficient
@@ -32,6 +34,11 @@ J.~Till, C.~E. Bryson, S.~Chung, A.~Orekhov, and D.~C. Rucker, ``Efficient
   and control of parallel continuum manipulators,'' in \emph{2015 {IEEE}
   International Conference on Robotics and Automation ({ICRA})}, pp.
   5067--5074, {ISSN}: 1050-4729.
+
+\bibitem{bryson_toward_2014}
+C.~E. Bryson and D.~C. Rucker, ``Toward parallel continuum manipulators,'' in
+  \emph{2014 {IEEE} International Conference on Robotics and Automation
+  ({ICRA})}, pp. 778--785, {ISSN}: 1050-4729.
 
 \bibitem{black_parallel_2018}
 C.~B. Black, J.~Till, and D.~C. Rucker, ``Parallel continuum robots: Modeling,
@@ -61,13 +68,6 @@ Gazebo. [Online]. Available: \url{http://gazebosim.org/}
 \BIBentryALTinterwordspacing
 {ROS}.org {\textbar} powering the world's robots. [Online]. Available:
   \url{https://www.ros.org/}
-\BIBentrySTDinterwordspacing
-
-\bibitem{black_modeling_2017}
-\BIBentryALTinterwordspacing
-C.~Black, ``Modeling, analysis, force sensing and control of continuum robots
-  for minimally invasive surgery.'' [Online]. Available:
-  \url{https://trace.tennessee.edu/utk_graddiss/4443}
 \BIBentrySTDinterwordspacing
 
 \bibitem{selig_geometric_2005}
