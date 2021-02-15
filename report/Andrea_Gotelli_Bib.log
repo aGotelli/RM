@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  14 FEB 2021 15:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  15 FEB 2021 15:18
 entering extended mode
 **./Andrea_Gotelli_Bib.tex
 (Andrea_Gotelli_Bib.tex
@@ -483,6 +483,12 @@ l.17  \newpage
  [4
 
 ]
+Overfull \hbox (5.29388pt too wide) in paragraph at lines 49--51
+[]\OT1/cmr/m/n/12 Concerning continuum parallel robots, they consist in an asse
+mbly of slender beams connected
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5
@@ -493,13 +499,7 @@ Chapter 1.
 [7
 
 ]
-Overfull \hbox (11.18642pt too wide) in paragraph at lines 79--80
-[]\OT1/cmr/m/n/12 When considering the dynamic modelling, the complexity increa
-ses. The equilibrium equations
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2158) has occurred while \output is active []
 
  [8]
 [9] (Andrea_Gotelli_Bib.bbl [10
@@ -527,16 +527,16 @@ Here is how much of TeX's memory you used:
  24722 multiletter control sequences out of 15000+200000
  410849 words of font info for 54 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 80i,10n,85p,1007b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 80i,10n,85p,994b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
 </home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmcsc10.p
 fb></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pf
 b>
-Output written on Andrea_Gotelli_Bib.pdf (13 pages, 125391 bytes).
+Output written on Andrea_Gotelli_Bib.pdf (13 pages, 125344 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
+ 219 PDF objects out of 1000 (max. 8388607)
  42 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
