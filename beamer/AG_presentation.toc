@@ -1,0 +1,27 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{1}{Subsection1}{2}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{2}{Subsection2}{3}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{3}{Subsection3}{4}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {2}{Methods}{5}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {2}{1}{Subsection1}{5}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {2}{2}{Subsection2}{6}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {2}{3}{Subsection3}{7}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {2}{4}{Subsection4}{8}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {2}{5}{Subsection5}{9}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {2}{6}{Subsection6}{10}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {2}{7}{Subsection7}{11}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {3}{Conclusions}{12}{0}{3}
