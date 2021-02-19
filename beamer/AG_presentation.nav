@@ -11,25 +11,25 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {2}{1}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{1}{2}{Subsection1}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{2}{Serial_parallel_robots}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{1}{1}{2/2}{Subsection1}{0}}
+\headcommand {\slideentry {1}{1}{1}{2/2}{Serial_parallel_robots}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {2}{2}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {2}{2}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{2}{3}{Subsection2}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{3}{CPR}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{1}{3/3}{Subsection2}{0}}
+\headcommand {\slideentry {1}{2}{1}{3/3}{CPR}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {3}{3}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {3}{3}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{3}{4}{Subsection3}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{4}{CPR_simulator}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{3}{1}{4/4}{Subsection3}{0}}
+\headcommand {\slideentry {1}{3}{1}{4/4}{CPR_simulator}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {4}{4}}
 \defcounter {refsection}{0}\relax 
@@ -41,75 +41,115 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {5}{4}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{1}{5}{Subsection1}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{5}{Geometric_modelling}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{1}{1}{5/5}{Subsection1}{0}}
+\headcommand {\slideentry {2}{1}{1}{5/5}{Geometric_modelling}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {5}{5}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {5}{5}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{2}{6}{Subsection2}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{6}{Rod_equilibrium}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{2}{1}{6/6}{Subsection2}{0}}
+\headcommand {\slideentry {2}{2}{1}{6/6}{Rod_equilibrium}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {6}{6}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {6}{6}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{3}{7}{Subsection3}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{7}{BVP}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{3}{1}{7/7}{Subsection3}{0}}
+\headcommand {\slideentry {2}{3}{1}{7/7}{BVP}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {7}{7}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {7}{7}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{4}{8}{Subsection4}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{8}{Shooting_method_statics}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{4}{1}{8/8}{Subsection4}{0}}
+\headcommand {\slideentry {2}{4}{1}{8/8}{Shooting_method_statics}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {8}{8}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {8}{8}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{5}{9}{Subsection5}}
+\headcommand {\beamer@subsectionentry {0}{2}{5}{9}{Shooting_method_dynamics}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{5}{1}{9/9}{Subsection5}{0}}
+\headcommand {\slideentry {2}{5}{1}{9/9}{Shooting_method_dynamics}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {9}{9}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {9}{9}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{6}{10}{Subsection6}}
+\headcommand {\beamer@subsectionentry {0}{2}{6}{10}{Strain_approach_intro}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{6}{1}{10/10}{Subsection6}{0}}
+\headcommand {\slideentry {2}{6}{1}{10/10}{Strain_approach_intro}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {10}{10}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {10}{10}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{7}{11}{Subsection7}}
+\headcommand {\beamer@subsectionentry {0}{2}{7}{11}{Strain_approach_deteails}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{7}{1}{11/11}{Subsection7}{0}}
+\headcommand {\slideentry {2}{7}{1}{11/11}{Strain_approach_deteails}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {11}{11}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {5}{11}}
-\defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {11}{11}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {3}{Conclusions}{12}{Conclusions}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{8}{12}{ICA_intro}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{0}{1}{12/12}{}{0}}
+\headcommand {\slideentry {2}{8}{1}{12/12}{ICA_intro}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {12}{12}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{0}{2}{13/13}{}{0}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{2}{9}{13}{ICA_details}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {2}{9}{1}{13/13}{ICA_details}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@partpages {1}{13}}
-\headcommand {\beamer@subsectionpages {12}{13}}
-\headcommand {\beamer@sectionpages {12}{13}}
-\headcommand {\beamer@documentpages {13}}
-\headcommand {\gdef \inserttotalframenumber {12}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {5}{13}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {13}{13}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {3}{Conclusions}{14}{Conclusions}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {14}{13}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{1}{14}{Conclusions}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{1}{1}{14/14}{Conclusions}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {14}{14}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {14}{14}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{2}{15}{Expected_work}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{2}{1}{15/15}{Expected_work}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {15}{15}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {15}{15}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{3}{16}{References}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{3}{1}{16/16}{References}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {16}{16}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {16}{16}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{4}{17}{Thanks}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{4}{1}{17/17}{Thanks}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\beamer@partpages {1}{17}}
+\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\beamer@sectionpages {14}{17}}
+\headcommand {\beamer@documentpages {17}}
+\headcommand {\gdef \inserttotalframenumber {16}}

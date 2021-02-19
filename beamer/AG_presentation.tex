@@ -1,5 +1,8 @@
 \documentclass[compress]{thesisbeamer}
 \useoutertheme[subsection=false]{miniframes}
+\usepackage{nccmath}
+\usepackage{mathtools}
+\usepackage[thinc]{esdiff}
 
 \title{A Gazebo Simulator for Continuum Parallel Robots}
 \author[Gotelli Andrea]{Author Gotelli Andrea\newline ~ \newline \normalsize{Advisors: Duh, Dih, Dah}}
@@ -16,7 +19,8 @@
 
     
    	\section{Introduction}
-        \subsection{Subsection1}
+        \subsection{Serial_parallel_robots}
+        \frametitle{Serial and parallel robots}
         \begin{frame}
             \begin{columns}
 			\column{0.5\textwidth}
@@ -42,8 +46,9 @@
 			\end{columns}
 		\end{frame}
 
-        \subsection{Subsection2}
+        \subsection{CPR}
         \begin{frame}
+        	\frametitle{Continuum parallel robots}
 			\begin{columns}
 			\column{0.5\textwidth}
 			\begin{itemize}%[<+->]
@@ -70,7 +75,7 @@
 			\end{columns}
 		\end{frame}
 		
-		\subsection{Subsection3}
+		\subsection{CPR_simulator}
         \begin{frame}
         	\frametitle{CPR simulator}
 			\begin{itemize}%[<+->]
@@ -86,23 +91,33 @@
    					\item Visual interface
    					\item Robot dynamics
   				\end{itemize}
+  				\item Modelling of continuum
  			\end{itemize}
 		\end{frame}
 
 
         \section{Methods}
-        	\subsection{Subsection1}
+        	\subsection{Geometric_modelling}
         	\begin{frame}
         		\frametitle{Geometric modelling}
 				\begin{columns}
 				\column{0.5\textwidth}
 				\begin{itemize}%[<+->]
   					\item Rod as 1D body 
-  					\item Function of the arc-lenght
+  					\item Function of the arc-lenght $ s $
   					\begin{itemize}%[<.->]
-   						\item Centerline position
-   						\item Cross-section orientation
+   						\item Centerline position $ p_{(s)}\in\mathbb{R}^3$
+   						\item Cross-section orientation $ R_{(s)}\in\textit{se}(3)  $
   					\end{itemize}
+  					\item Define transformation
+  					\begin{equation}
+  						T_{(s)} = 
+  						\begin{bmatrix}
+  							R_{(s)} & p_{(s)} 	\\
+  								0	&	1		\\
+  						\end{bmatrix}\in SE(3)
+  					\end{equation}
+  					\item Derivative wrt arc-lenght $ x^{'} = \diff{x}{s} $
  				\end{itemize}
 				\vspace{2cm}
 				\column{0.5\textwidth}
@@ -114,7 +129,7 @@
 				\end{columns}
 			\end{frame}
 
-        \subsection{Subsection2}
+        \subsection{Rod_equilibrium}
         \begin{frame}
         	\frametitle{Equilibrium Equations}
 			\begin{columns}
@@ -125,6 +140,12 @@
    					\item Distributed forces/moments
    					\item Internal forces/moments
   				\end{itemize}
+  				\begin{equation}
+  					{n}_{(s)}^{'} = - {f}_{(s)}
+  				\end{equation}
+  				\begin{equation}
+  					{m}_{(s)}^{'} = - {p}_{(s)}^{'} × {n}_{(s)} - {l}_{(s)}
+  				\end{equation}
  			\end{itemize}
 			\vspace{2cm}
 			\column{0.5\textwidth}
@@ -136,20 +157,20 @@
 			\end{columns}
 		\end{frame}
 
-        \subsection{Subsection3}
+        \subsection{BVP}
         \begin{frame}
+        	\frametitle{Boundary Value Problem}
 			\begin{columns}
 			\column{0.5\textwidth}
 			\begin{itemize}%[<+->]
-  				\item Boundary value problem
-  				\item Constraints at the platform
+  				\item Constraints at the distal plate
   				\begin{itemize}%[<.->]
-   					\item External wrench
-   					\item Joints and geometry
+   					\item External wrench $ \Psi_{ext} = \begin{bmatrix} F \\ M \end{bmatrix}   					 $
+   					\item Rod contribution $ \Psi_{i} = \begin{bmatrix} {n_i}_{(L_i)} \\ {m_i}_{(L_i)} \end{bmatrix}   					 $
   				\end{itemize}
   				\item Constraints at the base 
   				\begin{itemize}%[<.->]
-   					\item Actuations
+   					\item Actuations $ \Psi_{a_i}$
    					\item Joints and geometry 
   				\end{itemize}
  			\end{itemize}
@@ -157,62 +178,91 @@
 			\column{0.5\textwidth}
 			\begin{figure}[h]
 				\centering
-				\includegraphics[width=\textwidth]{images/BVP}
-				\caption{Sections of the beam considered for the static equilibrium.}
+				\includegraphics[height=0.7\textheight]{images/BVP}
+				\caption{Geometrical and actuation constraints for a Stewart-Gough CPR.}
 			\end{figure}
 			\end{columns}
 		\end{frame}
 		
-		\subsection{Subsection4}
+		\subsection{Shooting_method_statics}
         \begin{frame}
-			\begin{columns}
+        	\frametitle{Shooting Method in statics (Stewart-Gough CPR)}
+        	\begin{columns}
 			\column{0.5\textwidth}
 			\begin{itemize}%[<+->]
-  				\item Shooting Method
-  				\begin{itemize}
-  					\item ODE system in statics
+  				\item ODE system in statics
+  				\item Recursive solution
+  				\begin{itemize}			
   					\item Needs an intial guess
-  					\item Recursive
+  					\item Evaluation on a cost function  
+  					\begin{fleqn}
+  					\begin{equation}
+  						\textbf{\textit{f}} = 
+  						\begin{bmatrix}
+  							\sum{ {{n}_{i}}_{\left({L}_{i} \right)} }- F \\
+  							\sum{ \left[{{p}_{i}}_{\left({L}_{i} \right)} × {{n}_{i}}_{\left({L}_{i} \right)} + {{m}_{i}}_{\left({L}_{i} \right)} \right] } - {p}_{d} × F-M \\
+  							{p}_{d} + {R}_{d} {r}_{i} - {{p}_{i}}_{\left({L}_{i} \right)} \\
+  							{\left[{{R}_{i}^{T}}_{\left({L}_{i} \right)} {R}_{d} - {{R}_{i}}_{\left({L}_{i} \right)} {R}_{d}^{T} \right]}^{V} 
+  						\end{bmatrix}
+  					\end{equation}\vfill
+  					\end{fleqn}
   				\end{itemize}
-  				\item Evaluation on a cost function
   				\item Sensitive to initial conditions
  			\end{itemize}
-			\vspace{2cm}
+ 			%\vspace{2cm}
 			\column{0.5\textwidth}
 			\begin{figure}[h]
 				\centering
-				\includegraphics[width=\textwidth]{images/sequence}
-				\caption{Recursive process for Shooting method.}
+				\includegraphics[height=0.7\textheight]{images/BVP}
+				\caption{Geometrical and actuation constraints for a Stewart-Gough CPR.}
 			\end{figure}
 			\end{columns}
 		\end{frame}
 		
-		\subsection{Subsection5}
+		\subsection{Shooting_method_dynamics}
         \begin{frame}
+        	\frametitle{Shooting Method in dynamics}
 			\begin{itemize}%[<+->]
-  				\item Shooting Method
-  				\begin{itemize}
-  					\item PDE system in dynamics
-  					\item Numerical discretization
-  					\item Recursive
-  				\end{itemize}
-  				\item Evaluation on a cost function
-  				\item Sensitive to initial conditions
+				\item PDE system
+				\begin{itemize}
+					\item Derivative wrt to arc-lenght $ x^{'} = \diffp{x}{s} $
+					\item Derivative wrt to time $\dot{x} = \diffp{x}{t} $
+				\end{itemize}
+				\item From PDE to ODE
+				\begin{itemize}
+					\item Implicit discretization
+					\begin{equation}
+						\diffp{x}{t} = {c}_{0} {x}^{(i)} + \sum_{k=1}^{\infty} {\left[{c}_{k} {x}^{\left(i-k \right)} + {d}_{k} {\dot{x}} ^ {\left(i-k \right)} \right]}
+					\end{equation}
+					\begin{equation}
+						\diffp{x}{t} = {c}_{0} {x} ^ {\left(i \right)} + {c}_{1}^{\left(i-1 \right)} {x} ^ {\left(i-1 \right)} + {c}_{2}^{\left(i-2 \right)} {x} ^ {\left(i-2 \right)} + {d}_{1}^{\left(i-1 \right)} \diffp{x^{\left(i-1 \right)}}{t}
+					\end{equation}
+				\end{itemize}
+  				\item Non linear solver
  			\end{itemize}
 		\end{frame}
 		
-		\subsection{Subsection6}
+		\subsection{Strain_approach_intro}
         \begin{frame}
+        	\frametitle{Strain approach, modelling}
 			\begin{itemize}%[<+->]
-  				\item Strain Approach
+  				\item Modelling of a continuum body in space
   				\begin{itemize}
-  					\item Intro here
+  					\item With its configuration space $ \textit{C} = SE(3) \times \textit{S} $
   				\end{itemize}
+  				\item From assumption on rod deformation
+  				\begin{itemize}
+  					\item 
+  					\item Allowed twist $ \xi_a $
+  					\item Prohibited twist $ \xi_c $
+  				\end{itemize}
+  				\item Discretization of the vector field
  			\end{itemize}
 		\end{frame}
 		
-		\subsection{Subsection7}
+		\subsection{Strain_approach_deteails}
         \begin{frame}
+        	\frametitle{Strain approach, solution}
 			\begin{itemize}%[<+->]
   				\item Strain Approach
   				\begin{itemize}
@@ -220,12 +270,91 @@
   				\end{itemize}
  			\end{itemize}
 		\end{frame}
-
-        \section{Conclusions}
+		
+		\subsection{ICA_intro}
         \begin{frame}
-            \frametitle{Frame3}
-        \end{frame}
+        	\frametitle{Introduction to the Isogeometric Collocation Method}
+			\begin{columns}
+			\column{0.5\textwidth}			
+			\begin{itemize}%[<+->]
+  				\item NURBS curves represent vector field
+  				\begin{itemize}
+  					\item Control point as degree of freedom
+  					\item Basis functions relate influence
+  				\end{itemize}
+  				\item Cost function
+  				\begin{itemize}
+  					\item Equilibrium equation evaluated at collocation points
+  				\end{itemize}
+ 			\end{itemize}
+ 			%\vspace{2cm}
+			\column{0.5\textwidth}
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=\textwidth]{images/ICA}
+				\caption{Rod centerline position and orientation represented with NURBS curves}
+			\end{figure}
+			\end{columns}
+		\end{frame}
+		
+		\subsection{ICA_details}
+        \begin{frame}
+        	\frametitle{Properties of the Isogeometric Collocation Method}
+			\begin{itemize}%[<+->]
+  				\item Less integrations
+  				\begin{itemize}
+  					\item In statics no integration
+  					\item ODE in dynamics
+  				\end{itemize}
+  				\item Introduces possibility of modelling
+  				\begin{itemize}
+  					\item Contact between rods
+  					\item Changes in shape and or material 
+  					\item Rods coupling
+  				\end{itemize}
+ 			\end{itemize}
+		\end{frame}
 
-        \frame{}
+  	\section{Conclusions}
+      	\subsection{Conclusions}
+        \begin{frame}
+        	\begin{itemize}
+        		\item 	TODO
+        		\begin{itemize}
+        			\item TODO
+        		\end{itemize}
+        	\end{itemize}
+        \end{frame}
+        	
+      	\subsection{Expected_work}
+        \begin{frame}
+        	\begin{itemize}
+        		\item 	TODO
+        		\begin{itemize}
+        			\item TODO
+        		\end{itemize}
+        	\end{itemize}
+        \end{frame}
+        	
+        \subsection{References}
+        \begin{frame}
+        	\begin{itemize}
+        		\item 	TODO
+        		\begin{itemize}
+        			\item TODO
+        		\end{itemize}
+        	\end{itemize}
+        \end{frame}
+        	
+        \subsection{Thanks}
+        \begin{frame}
+        	\begin{itemize}
+        		\item 	TODO
+        		\begin{itemize}
+        			\item TODO
+        		\end{itemize}
+        	\end{itemize}
+        \end{frame}
+        	
 
 \end{document}
