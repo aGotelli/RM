@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  19 FEB 2021 10:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  19 FEB 2021 20:41
 entering extended mode
 **./Andrea_Gotelli_Bib.tex
 (Andrea_Gotelli_Bib.tex
@@ -459,7 +459,17 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
 
 (/home/andrea/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Underfull \hbox (badness 1931) in paragraph at lines 46--47
+[]|\OT1/cmr/m/n/12 Researcher (LS2N), Ecole
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 47--48
+[]|\OT1/cmr/m/n/12 Researcher (LS2N), Ecole
+ []
+
+[1
 
 
 {/home/andrea/.miktex/texmfs/data/pdftex/config/pdftex.map}] [2])
@@ -521,10 +531,10 @@ Package rerunfilecheck Info: File `Andrea_Gotelli_Bib.out' has not changed.
 (rerunfilecheck)             Checksum: 60467C1E79591B4F684E814424D99434;533.
  ) 
 Here is how much of TeX's memory you used:
- 8071 strings out of 481629
- 119528 string characters out of 2918595
+ 8072 strings out of 481629
+ 119536 string characters out of 2918595
  429401 words of memory out of 3000000
- 24722 multiletter control sequences out of 15000+200000
+ 24723 multiletter control sequences out of 15000+200000
  410849 words of font info for 54 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  80i,10n,85p,994b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -534,7 +544,7 @@ fb></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pf
 b>
-Output written on Andrea_Gotelli_Bib.pdf (13 pages, 125340 bytes).
+Output written on Andrea_Gotelli_Bib.pdf (13 pages, 125627 bytes).
 PDF statistics:
  219 PDF objects out of 1000 (max. 8388607)
  42 named destinations out of 1000 (max. 500000)
