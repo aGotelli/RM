@@ -125,7 +125,8 @@
 \newcommand{\MakeTitleNoFoot}{
 \begin{frame}[plain]
 \placeImage{LogoECN}{7.8cm}{.2cm}{.25\paperwidth}
-\placeImage{LogoIMARO}{8.1cm}{5.cm}{.2\paperwidth}
+%\placeImage{LogoIMARO}{8.1cm}{5.cm}{.2\paperwidth}
+\placeImage{logo_orizzontale_COLORE}{6.6cm}{3.5cm}{.5\paperwidth}
 \placeImage{LogoEMARO}{8.1cm}{10.cm}{.2\paperwidth}
 
  \titlepage

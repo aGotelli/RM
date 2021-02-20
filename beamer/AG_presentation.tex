@@ -5,7 +5,7 @@
 \usepackage[thinc]{esdiff}
 
 \title{A Gazebo Simulator for Continuum Parallel Robots}
-\author[Gotelli Andrea]{Author Gotelli Andrea\newline ~ \newline \normalsize{Advisors: Duh, Dih, Dah}}
+\author[Gotelli Andrea]{Author Gotelli Andrea\newline ~ \newline \normalsize{Advisors: Sébastien Briot, Olivier Kermorgant, Federico Zaccaria, Antonio Sgorbissa}}
 \date{22/02/2021}
 
 \bibliography{../biblio}
@@ -61,8 +61,11 @@
   				\item Model and stability problems
   				\begin{itemize}%[<.->]
    					\item More unstable configurations
-   					\item Another drawback
    					\item Not analytical solution
+  				\end{itemize}
+  				\item Definition of a general simulator
+  				\begin{itemize}
+  					\item Gazebo plugin
   				\end{itemize}
  			\end{itemize}
 			\vspace{2cm}
@@ -74,60 +77,43 @@
 			\end{figure}
 			\end{columns}
 		\end{frame}
-		
-		\subsection{CPR_simulator}
+
+  	\section{Modelling of Continuum}
+       	\subsection{Geometric_modelling}
         \begin{frame}
-        	\frametitle{CPR simulator}
+        	\frametitle{Geometric modelling}
 			\begin{itemize}%[<+->]
-  				\item General simulator 
+  				\item Rod as 1D body 
+  				\item Function of the arc-lenght $ s $
   				\begin{itemize}%[<.->]
-   					\item Gazebo
-   					\item Different robots
+   					\item Centerline position $ p_{(s)}\in\mathbb{R}^3$
+   					\item Cross-section orientation $R_{(s)}\in\textit{se}(3)$
   				\end{itemize}
-  				\item Solve the modelling
-  				\begin{itemize}%[<.->]
-   					\item Rod statics
-   					\item Robot assembly
-   					\item Visual interface
-   					\item Robot dynamics
-  				\end{itemize}
-  				\item Modelling of continuum
+  			\end{itemize}
+  			\begin{columns}
+			\column{0.5\textwidth}
+			\begin{itemize}%[<+->]
+  				\item Define transformation
+  				\begin{fleqn}
+  				\begin{equation}
+  					T_{(s)} = 
+  					\begin{bmatrix}
+  						R_{(s)} & p_{(s)} 	\\
+  							0	&	1		\\
+  					\end{bmatrix}\in SE(3)
+  				\end{equation}
+  				\end{fleqn}
+  				\item Derivative wrt arc-lenght $ x^{'} = \diff{x}{s} $
  			\end{itemize}
+			\vspace{2cm}
+			\column{0.5\textwidth}
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=\textwidth]{images/rod_geometry}
+				\caption{Rod geometric modelling}
+			\end{figure}
+			\end{columns}
 		\end{frame}
-
-
-        \section{Methods}
-        	\subsection{Geometric_modelling}
-        	\begin{frame}
-        		\frametitle{Geometric modelling}
-				\begin{columns}
-				\column{0.5\textwidth}
-				\begin{itemize}%[<+->]
-  					\item Rod as 1D body 
-  					\item Function of the arc-lenght $ s $
-  					\begin{itemize}%[<.->]
-   						\item Centerline position $ p_{(s)}\in\mathbb{R}^3$
-   						\item Cross-section orientation $ R_{(s)}\in\textit{se}(3)  $
-  					\end{itemize}
-  					\item Define transformation
-  					\begin{equation}
-  						T_{(s)} = 
-  						\begin{bmatrix}
-  							R_{(s)} & p_{(s)} 	\\
-  								0	&	1		\\
-  						\end{bmatrix}\in SE(3)
-  					\end{equation}
-  					\item Derivative wrt arc-lenght $ x^{'} = \diff{x}{s} $
- 				\end{itemize}
-				\vspace{2cm}
-				\column{0.5\textwidth}
-				\begin{figure}[h]
-					\centering
-					\includegraphics[width=\textwidth]{images/rod_geometry}
-					\caption{Rod geometric modelling}
-				\end{figure}
-				\end{columns}
-			\end{frame}
 
         \subsection{Rod_equilibrium}
         \begin{frame}
@@ -183,7 +169,8 @@
 			\end{figure}
 			\end{columns}
 		\end{frame}
-		
+	
+	\section{Methods}	
 		\subsection{Shooting_method_statics}
         \begin{frame}
         	\frametitle{Shooting Method in statics (Stewart-Gough CPR)}
@@ -191,6 +178,11 @@
 			\column{0.5\textwidth}
 			\begin{itemize}%[<+->]
   				\item ODE system in statics
+  				\begin{itemize}
+  					\item Equilibrium equations
+  					\item Material properties
+  					\item Geometrical considerations
+  				\end{itemize}
   				\item Recursive solution
   				\begin{itemize}			
   					\item Needs an intial guess
@@ -207,7 +199,6 @@
   					\end{equation}\vfill
   					\end{fleqn}
   				\end{itemize}
-  				\item Sensitive to initial conditions
  			\end{itemize}
  			%\vspace{2cm}
 			\column{0.5\textwidth}
@@ -238,7 +229,22 @@
 						\diffp{x}{t} = {c}_{0} {x} ^ {\left(i \right)} + {c}_{1}^{\left(i-1 \right)} {x} ^ {\left(i-1 \right)} + {c}_{2}^{\left(i-2 \right)} {x} ^ {\left(i-2 \right)} + {d}_{1}^{\left(i-1 \right)} \diffp{x^{\left(i-1 \right)}}{t}
 					\end{equation}
 				\end{itemize}
-  				\item Non linear solver
+ 			\end{itemize}
+		\end{frame}
+		
+		\subsection{Non linear solver}
+        \begin{frame}
+        	\frametitle{Non linear solver: Levenberg-Marquardt algorithm}
+			\begin{itemize}%[<+->]
+  				\item Iterative algorithm
+  				\item Evaluates influence of parameter vector $ u $
+  				\begin{equation}
+  				J = \diff{f}{u}
+  				\end{equation}
+  				\item Updates the parameter vector
+  				\begin{equation}
+  				{u}_{k+1} = {u}_{k} + {\left({J}_{k}^{T} {J}_{k} + \mu I \right)}^{-1} {J}_{k}^{T} {f}_{k}
+  				\end{equation}
  			\end{itemize}
 		\end{frame}
 		
@@ -248,25 +254,88 @@
 			\begin{itemize}%[<+->]
   				\item Modelling of a continuum body in space
   				\begin{itemize}
+  					\item Internally actuated Cosserat beam
   					\item With its configuration space $ \textit{C} = SE(3) \times \textit{S} $
   				\end{itemize}
   				\item From assumption on rod deformation
   				\begin{itemize}
-  					\item 
-  					\item Allowed twist $ \xi_a $
-  					\item Prohibited twist $ \xi_c $
+  					\item Allowed $ \xi_a $, prohibited $ \xi_c $ twists
+  					\item Strain generalized coordinates $ q_{[n\times1]}$
+  					\item Basis functions ${\Phi}_{\left[n_a \times n \right]} $
+  					\begin{equation}
+  						{\xi_a}_{\left(s , t \right)} = {\xi_{a0}}_{\left(s \right)} + {\Phi}_{\left(s \right)} {q}_{\left(t \right)}
+  					\end{equation}
   				\end{itemize}
-  				\item Discretization of the vector field
+  				\item Configuration space discretization $ \textit{C} = SE(3) \times \mathbb{R}^n $
  			\end{itemize}
 		\end{frame}
 		
 		\subsection{Strain_approach_deteails}
         \begin{frame}
-        	\frametitle{Strain approach, solution}
+        	\frametitle{Strain approach, Lagrangian model of continuum manipulator}
 			\begin{itemize}%[<+->]
   				\item Strain Approach
+  				\begin{fleqn}
+  				\begin{equation}
+  					\begin{bmatrix}
+  							0 		\\
+  						{Q}_{ad}	\\
+					\end{bmatrix} 
+					= 
+					\begin{bmatrix}
+						{M}_{0}		& {M}_{0\epsilon} 				\\ 
+						{M}_{\epsilon0}	& {M}_{\epsilon\epsilon}	\\
+					\end{bmatrix}
+					\begin{bmatrix}
+						{\dot{\eta}}_{0} 	\\ 
+						{\ddot{q}}_{(t)}	\\
+					\end{bmatrix}	
+					+
+					\begin{bmatrix}
+						{{F}_{v}}_{\left(q , \dot{q} , {\eta}_{0} \right)}	\\
+						{{Q}_{v}}_{\left(q , \dot{q} , {\eta}_{0} \right)}	\\
+					\end{bmatrix}
+					+
+					\begin{bmatrix}
+						{{F}_{c}}_{\left(q , {g}_{0} \right)}	\\ 
+						{{Q}_{c}}_{\left(q , {g}_{0} \right)}	\\
+					\end{bmatrix}
+					+
+					\begin{bmatrix}
+						0 \\
+						{K}_{\epsilon\epsilon} {q}_{\left(t \right)} + {D}_{\epsilon\epsilon} {\dot{q}}_{\left(t \right)}	\\
+					\end{bmatrix}
+  				\end{equation} 
+  				\end{fleqn}
+  				\item Virtual serial mechanism analogy			
   				\begin{itemize}
-  					\item Details here
+  					\item Lagrangian model
+  					\begin{equation}
+  						\begin{bmatrix}
+  						{F}_{0} \\
+  						{Q}_{a}	\\
+					\end{bmatrix} 
+					= 
+					\begin{bmatrix}
+						{M}_{0}		& {M}_{0\epsilon} 				\\ 
+						{M}_{\epsilon0}	& {M}_{\epsilon\epsilon}	\\
+					\end{bmatrix}
+					\begin{bmatrix}
+						{\dot{\eta}}_{0} 	\\ 
+						{\ddot{q}}_{(t)}	\\
+					\end{bmatrix}	
+					+
+					\begin{bmatrix}
+						{{F}_{v}}_{\left(q , \dot{q} , {\eta}_{0} \right)}	\\
+						{{Q}_{v}}_{\left(q , \dot{q} , {\eta}_{0} \right)}	\\
+					\end{bmatrix}
+					+
+					\begin{bmatrix}
+						{{F}_{c}}_{\left(q , {g}_{0} \right)}	\\ 
+						{{Q}_{c}}_{\left(q , {g}_{0} \right)}	\\
+					\end{bmatrix}
+  					\end{equation}
+  					\item Recursive reconstruction
   				\end{itemize}
  			\end{itemize}
 		\end{frame}
@@ -300,6 +369,8 @@
 		\subsection{ICA_details}
         \begin{frame}
         	\frametitle{Properties of the Isogeometric Collocation Method}
+        	\begin{columns}
+			\column{0.5\textwidth}
 			\begin{itemize}%[<+->]
   				\item Less integrations
   				\begin{itemize}
@@ -313,36 +384,59 @@
   					\item Rods coupling
   				\end{itemize}
  			\end{itemize}
+ 			\vspace{2cm}
+			\column{0.5\textwidth}
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=\textwidth]{images/AV_TV}
+				\caption{Rod with properties changing a) axially and b) transversally}
+			\end{figure}
+			\end{columns}
 		\end{frame}
 
   	\section{Conclusions}
       	\subsection{Conclusions}
         \begin{frame}
+        	\frametitle{Three different models}
         	\begin{itemize}
-        		\item 	TODO
+        		\item Shooting Method
         		\begin{itemize}
-        			\item TODO
+        			\item Integrates along the arc-lenght
+        			\item Evaluates a cost function
+        			\item Implicit time discretization in dynamics
+        		\end{itemize}
+        		\item Strain Approach
+        		\begin{itemize}
+        			\item Integrates along the arc-lenght
+        			\item Evaluates a cost function
+        			\item Implicit time discretization in dynamics
+        		\end{itemize}
+        		\item Isogeometric Collocation Method
+        		\begin{itemize}
+        			\item No integration in arc-lenght
+        			\item Equilibrium equation in collocation points
+        			\item Consider additional features 
+        			\item Implicit time discretization in dynamics
         		\end{itemize}
         	\end{itemize}
         \end{frame}
         	
       	\subsection{Expected_work}
         \begin{frame}
+        	\frametitle{Expected work}
         	\begin{itemize}
-        		\item 	TODO
+        		\item Model selection
         		\begin{itemize}
-        			\item TODO
+        			\item Previusly presented 
+        			\item Combination
         		\end{itemize}
-        	\end{itemize}
-        \end{frame}
-        	
-        \subsection{References}
-        \begin{frame}
-        	\begin{itemize}
-        		\item 	TODO
-        		\begin{itemize}
-        			\item TODO
-        		\end{itemize}
+        		\item Solve the modelling
+  				\begin{itemize}%[<.->]
+   					\item Rod statics
+   					\item Robot assembly
+   					\item Visual interface
+   					\item Robot dynamics
+  				\end{itemize}
         	\end{itemize}
         \end{frame}
         	
