@@ -13,22 +13,34 @@
 % video will work on Linux (with Okular) or OS X, for other OS's or viewers find your own way to do it
 %\videoOSX	% for OS X 
 %\videoOFF
+\setbeamerfont{caption}{size=\tiny}
+
 \begin{document}
 
 \MakeTitleNoFoot
 
+\begin{frame}
+	\frametitle{Index}
+	\begin{enumerate}
+		\item Introduction to Continuum Parallel Robots (CPR)
+   		\item Modelling of Continuum
+   		\item Methods
+   		\item Conclusions
+	\end{enumerate}	
+\end{frame}
+
     
-   	\section{Introduction}
+   	\section{Introduction to CPR}	
         \subsection{Serial_parallel_robots}
-        \frametitle{Serial and parallel robots}
         \begin{frame}
+        	\frametitle{Serial and parallel robots}
             \begin{columns}
 			\column{0.5\textwidth}
 			\begin{itemize}%[<+->]
   				\item Serial robots
   				\begin{itemize}%[<.->]
    					\item Simpler and more used
-   					\item Limited by precision and inertia
+   					\item Limited by weight and inertia
   				\end{itemize}\vfill
   				\item Parallel robots
   				\begin{itemize}%[<.->]
@@ -36,12 +48,11 @@
    					\item More joints involved
   				\end{itemize}\vfill
  			\end{itemize}
-			\vspace{2cm}
 			\column{0.5\textwidth}
 			\begin{figure}[h]
 				\centering
 				\includegraphics[width=\textwidth]{images/serial_parall_robots}
-				\caption{Different robot architectures}
+				\caption{Different robot architectures \cite{bryson_toward_2014}.}	
 			\end{figure}
 			\end{columns}
 		\end{frame}
@@ -61,11 +72,12 @@
   				\item Model and stability problems
   				\begin{itemize}%[<.->]
    					\item More unstable configurations
+   					\item Lower payload
    					\item Not analytical solution
   				\end{itemize}
   				\item Definition of a general simulator
   				\begin{itemize}
-  					\item Gazebo plugin
+  					\item Gazebo plugins
   				\end{itemize}
  			\end{itemize}
 			\vspace{2cm}
@@ -73,7 +85,7 @@
 			\begin{figure}[h]
 				\centering
 				\includegraphics[width=\textwidth]{images/serial_parall_robots}
-				\caption{Different robot architectures.}
+				\caption{Different robot architectures \cite{bryson_toward_2014}.}
 			\end{figure}
 			\end{columns}
 		\end{frame}
@@ -81,7 +93,7 @@
   	\section{Modelling of Continuum}
        	\subsection{Geometric_modelling}
         \begin{frame}
-        	\frametitle{Geometric modelling}
+        	\frametitle{Geometric modelling: Cosserat rod thoery}
 			\begin{itemize}%[<+->]
   				\item Rod as 1D body 
   				\item Function of the arc-lenght $ s $
@@ -110,7 +122,7 @@
 			\begin{figure}[h]
 				\centering
 				\includegraphics[width=\textwidth]{images/rod_geometry}
-				\caption{Rod geometric modelling}
+				\caption{Rod geometric modelling \cite{till_statics_2019}.}
 			\end{figure}
 			\end{columns}
 		\end{frame}
@@ -138,7 +150,7 @@
 			\begin{figure}[h]
 				\centering
 				\includegraphics[width=\textwidth]{images/equilibrium}
-				\caption{Sections of the beam considered for the static equilibrium.}
+				\caption{Sections of the beam considered for the static equilibrium \cite{black_parallel_2018}.}
 			\end{figure}
 			\end{columns}
 		\end{frame}
@@ -237,6 +249,10 @@
         	\frametitle{Non linear solver: Levenberg-Marquardt algorithm}
 			\begin{itemize}%[<+->]
   				\item Iterative algorithm
+  				\begin{itemize}
+  					\item From initial conditions
+  					\item Very sensitive
+  				\end{itemize}
   				\item Evaluates influence of parameter vector $ u $
   				\begin{equation}
   				J = \diff{f}{u}
@@ -250,7 +266,7 @@
 		
 		\subsection{Strain_approach_intro}
         \begin{frame}
-        	\frametitle{Strain approach, modelling}
+        	\frametitle{Strain approach}
 			\begin{itemize}%[<+->]
   				\item Modelling of a continuum body in space
   				\begin{itemize}
@@ -361,7 +377,7 @@
 			\begin{figure}[h]
 				\centering
 				\includegraphics[width=\textwidth]{images/ICA}
-				\caption{Rod centerline position and orientation represented with NURBS curves}
+				\caption{Rod centerline position and orientation represented with NURBS curves \cite{piegl_nurbs_1997}.}
 			\end{figure}
 			\end{columns}
 		\end{frame}
@@ -397,26 +413,24 @@
   	\section{Conclusions}
       	\subsection{Conclusions}
         \begin{frame}
-        	\frametitle{Three different models}
+        	\frametitle{Conclusions}
         	\begin{itemize}
-        		\item Shooting Method
+        		\item Types of robots
         		\begin{itemize}
-        			\item Integrates along the arc-lenght
-        			\item Evaluates a cost function
-        			\item Implicit time discretization in dynamics
+        			\item Serial robots
+        			\item Parallel robots
+        			\item Continuum parallel robots
         		\end{itemize}
-        		\item Strain Approach
-        		\begin{itemize}
-        			\item Integrates along the arc-lenght
-        			\item Evaluates a cost function
-        			\item Implicit time discretization in dynamics
+        		\item Model of continuum
+       		 	\begin{itemize}
+        			\item Geometric
+        			\item Equilibrium
         		\end{itemize}
-        		\item Isogeometric Collocation Method
+        		\item Methods
         		\begin{itemize}
-        			\item No integration in arc-lenght
-        			\item Equilibrium equation in collocation points
-        			\item Consider additional features 
-        			\item Implicit time discretization in dynamics
+        			\item Shooting Method
+       		 		\item Strain Approach
+       		 		\item Isogeometric Collocation Method
         		\end{itemize}
         	\end{itemize}
         \end{frame}
@@ -425,7 +439,7 @@
         \begin{frame}
         	\frametitle{Expected work}
         	\begin{itemize}
-        		\item Model selection
+        		\item Method selection
         		\begin{itemize}
         			\item Previusly presented 
         			\item Combination
@@ -442,13 +456,12 @@
         	
         \subsection{Thanks}
         \begin{frame}
-        	\begin{itemize}
-        		\item 	TODO
-        		\begin{itemize}
-        			\item TODO
-        		\end{itemize}
-        	\end{itemize}
+  			\centering \Large
+  			\emph{Thank you for your attention}
         \end{frame}
+        
+\begin{frame}
+	\printbibliography
+\end{frame}
         	
-
 \end{document}

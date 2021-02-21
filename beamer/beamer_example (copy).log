@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  21 FEB 2021 22:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  21 FEB 2021 12:15
 entering extended mode
-**./AG_presentation.tex
-(AG_presentation.tex
+**"./beamer_example (copy).tex"
+("beamer_example (copy).tex"
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-12-07> xparse <2020-03-03> (thesisbeamer.cls
 Document Class: thesisbeamer 09/09/2010, v1.0
@@ -1113,83 +1113,40 @@ ty)
 .sty))
 (/home/andrea/.miktex/texmfs/install/tex/latex/beamer/beamerinnerthemecircles.s
 ty))
-(/home/andrea/.miktex/texmfs/install/tex/latex/beamer/beamerouterthememiniframe
-s.sty) (/home/andrea/.miktex/texmfs/install/tex/latex/ncctools/nccmath.sty
-Package: nccmath 2006/01/20 v1.3 Additional Math Commands (NCC)
-\NCC@fracrulewidth=\dimen297
-)
-(/home/andrea/.miktex/texmfs/install/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
-
-(/home/andrea/.miktex/texmfs/install/tex/latex/latex-tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count467
-\calc@Bcount=\count468
-\calc@Adimen=\dimen298
-\calc@Bdimen=\dimen299
-\calc@Askip=\skip88
-\calc@Bskip=\skip89
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count469
-\calc@Cskip=\skip90
-)
-(/home/andrea/.miktex/texmfs/install/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
-)
-LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count470
-\l_MT_multwidth_dim=\dimen300
-\origjot=\skip91
-\l_MT_shortvdotswithinadjustabove_dim=\dimen301
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen302
-\l_MT_above_intertext_sep=\dimen303
-\l_MT_below_intertext_sep=\dimen304
-\l_MT_above_shortintertext_sep=\dimen305
-\l_MT_below_shortintertext_sep=\dimen306
-\xmathstrut@box=\box79
-\xmathstrut@dim=\dimen307
-)
-(/home/andrea/.miktex/texmfs/install/tex/latex/esdiff/esdiff.sty
-Package: esdiff 
-)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 8.
+(hyperref)                removing `\newline' on input line 4.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 8.
+(hyperref)                removing `\newline' on input line 4.
 
-\@quotelevel=\count471
-\@quotereset=\count472
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 18
+\@quotelevel=\count467
+\@quotereset=\count468
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 13
 .
 (/home/andrea/.miktex/texmfs/install/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-(AG_presentation.aux)
-\openout1 = `AG_presentation.aux'.
+("beamer_example (copy).aux")
+\openout1 = `"beamer_example (copy).aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1227,32 +1184,24 @@ LaTeX Font Info:    ... okay on input line 18.
 
 (/home/andrea/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count473
-\scratchdimen=\dimen308
-\scratchbox=\box80
-\nofMPsegments=\count474
-\nofMParguments=\count475
+\scratchcounter=\count469
+\scratchdimen=\dimen297
+\scratchbox=\box79
+\nofMPsegments=\count470
+\nofMParguments=\count471
 \everyMPshowfont=\toks56
-\MPscratchCnt=\count476
-\MPscratchDim=\dimen309
-\MPnumerator=\count477
-\makeMPintoPDFobject=\count478
+\MPscratchCnt=\count472
+\MPscratchDim=\dimen298
+\MPnumerator=\count473
+\makeMPintoPDFobject=\count474
 \everyMPtoPDFconversion=\toks57
 ) (/home/andrea/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-(/home/andrea/.miktex/texmfs/install/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 )
-Package hyperref Info: Link coloring OFF on input line 18.
-
-(/home/andrea/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
+Package hyperref Info: Link coloring OFF on input line 13.
+ (/home/andrea/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
 (/home/andrea/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
@@ -1262,57 +1211,57 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count479
+\c@section@level=\count475
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
- (AG_presentation.out) (AG_presentation.out)
+LaTeX Info: Redefining \ref on input line 13.
+LaTeX Info: Redefining \pageref on input line 13.
+LaTeX Info: Redefining \nameref on input line 13.
+ ("beamer_example (copy).out") ("beamer_example (copy).out")
 \@outlinefile=\write6
-\openout6 = `AG_presentation.out'.
+\openout6 = `"beamer_example (copy).out"'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 18.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 13.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 18.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 13.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 18.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 13.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/phv/b/n on input line 18.
+(Font)                  OT1/cmr/bx/n --> T1/phv/b/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/phv/b/n on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 18.
+(Font)                  OT1/cmr/bx/n --> T1/phv/b/n on input line 13.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 18.
+(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 18.
+(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 13.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/phv/m/it on input line 18.
+(Font)                  OT1/cmr/m/it --> T1/phv/m/it on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/phv/m/it on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 18.
+(Font)                  OT1/cmr/bx/it --> T1/phv/m/it on input line 13.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 13.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 18.
+(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 13.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 18.
+(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 18.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/phv/b/n --> T1/phv/b/n on input line 18.
+(Font)                  T1/phv/b/n --> T1/phv/b/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 18.
+(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 18.
+(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 18.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 13.
 
 (/home/andrea/.miktex/texmfs/install/tex/latex/translator/translator-basic-dict
 ionary-English.dict
@@ -1364,304 +1313,188 @@ Package: xparse 2020-10-27 L3 Experimental document command parser
 .tex))
 Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 )
-\openout5 = `AG_presentation-blx.bib'.
+\openout5 = `beamer_example_(copy)-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'AG_presentation.bbl' found.
- (AG_presentation.bbl)
-Package biblatex Info: Reference section=0 on input line 18.
-Package biblatex Info: Reference segment=0 on input line 18.
- (AG_presentation.nav)
-Overfull \hbox (13.29546pt too wide) in paragraph at lines 18--18
- [][][][]  
- []
-
-<LogoECN.pdf, id=114, 384.11186pt x 192.05652pt>
+Package biblatex Info: ... file '"beamer_example (copy)".bbl' found.
+ ("beamer_example (copy).bbl")
+Package biblatex Info: Reference section=0 on input line 13.
+Package biblatex Info: Reference segment=0 on input line 13.
+ ("beamer_example (copy).nav")
+<LogoECN.pdf, id=14, 384.11186pt x 192.05652pt>
 File: LogoECN.pdf Graphic file (type pdf)
 <use LogoECN.pdf>
-Package pdftex.def Info: LogoECN.pdf  used on input line 20.
+Package pdftex.def Info: LogoECN.pdf  used on input line 15.
 (pdftex.def)             Requested size: 91.04883pt x 45.52304pt.
-<logo_orizzontale_COLORE.png, id=115, 602.25pt x 361.35pt>
+<logo_orizzontale_COLORE.png, id=15, 602.25pt x 361.35pt>
 File: logo_orizzontale_COLORE.png Graphic file (type png)
 <use logo_orizzontale_COLORE.png>
-Package pdftex.def Info: logo_orizzontale_COLORE.png  used on input line 20.
+Package pdftex.def Info: logo_orizzontale_COLORE.png  used on input line 15.
 (pdftex.def)             Requested size: 182.09767pt x 109.26047pt.
-<LogoEMARO.jpg, id=116, 667.49374pt x 327.2225pt>
+<LogoEMARO.jpg, id=16, 667.49374pt x 327.2225pt>
 File: LogoEMARO.jpg Graphic file (type jpg)
 <use LogoEMARO.jpg>
-Package pdftex.def Info: LogoEMARO.jpg  used on input line 20.
+Package pdftex.def Info: LogoEMARO.jpg  used on input line 15.
 (pdftex.def)             Requested size: 72.83795pt x 35.70499pt.
-[1
+ [1
 
 {/home/andrea/.miktex/texmfs/data/pdftex/config/pdftex.map} <./LogoECN.pdf> <./
-logo_orizzontale_COLORE.png> <./LogoEMARO.jpg>]
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 30--30
+logo_orizzontale_COLORE.png> <./LogoEMARO.jpg>] ("beamer_example (copy).toc")
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 19--19
 [][][][] 
  []
 
 [2
 
 ]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 34.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 34.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
-
-(/home/andrea/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
+ (/home/andrea/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
 
 
 (/home/andrea/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 58.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 58.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 58.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 58.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 58.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 58.
-<images/serial_parall_robots.png, id=174, 339.2675pt x 349.305pt>
-File: images/serial_parall_robots.png Graphic file (type png)
-<use images/serial_parall_robots.png>
-Package pdftex.def Info: images/serial_parall_robots.png  used on input line 58
-.
-(pdftex.def)             Requested size: 171.21765pt x 176.28304pt.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
+<triangle1.pdf, id=38, 146.385pt x 79.78506pt>
+File: triangle1.pdf Graphic file (type pdf)
+<use triangle1.pdf>
+Package pdftex.def Info: triangle1.pdf  used on input line 36.
+(pdftex.def)             Requested size: 136.97203pt x 74.6595pt.
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 58--58
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 36--36
 [][][][] 
- []
-
-
-Overfull \vbox (3.96696pt too high) detected at line 58
  []
 
 [3
 
- <./images/serial_parall_robots.png>]
-File: images/serial_parall_robots.png Graphic file (type png)
-<use images/serial_parall_robots.png>
-Package pdftex.def Info: images/serial_parall_robots.png  used on input line 91
-.
-(pdftex.def)             Requested size: 171.21765pt x 176.28304pt.
+ <./triangle1.pdf>]
+File: triangle1.pdf Graphic file (type pdf)
+<use triangle1.pdf>
+Package pdftex.def Info: triangle1.pdf  used on input line 36.
+(pdftex.def)             Requested size: 136.97203pt x 74.6595pt.
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 91--91
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 36--36
 [][][][] 
- []
-
-
-Overfull \vbox (9.87943pt too high) detected at line 91
  []
 
 [4
 
 ]
+File: triangle1.pdf Graphic file (type pdf)
+<use triangle1.pdf>
+Package pdftex.def Info: triangle1.pdf  used on input line 36.
+(pdftex.def)             Requested size: 136.97203pt x 74.6595pt.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 94.
-
-<images/rod_geometry.png, id=233, 626.34pt x 310.15875pt>
-File: images/rod_geometry.png Graphic file (type png)
-<use images/rod_geometry.png>
-Package pdftex.def Info: images/rod_geometry.png  used on input line 128.
-(pdftex.def)             Requested size: 171.21765pt x 84.78516pt.
-
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 128--128
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 36--36
 [][][][] 
- []
-
-
-Overfull \vbox (24.56044pt too high) detected at line 128
  []
 
 [5
 
- <./images/rod_geometry.png>]
+]
+File: triangle1.pdf Graphic file (type pdf)
+<use triangle1.pdf>
+Package pdftex.def Info: triangle1.pdf  used on input line 36.
+(pdftex.def)             Requested size: 136.97203pt x 74.6595pt.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 130.
-
-
-LaTeX Warning: Command \texttimes invalid in math mode on input line 156.
-
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
-56.
-(/home/andrea/.miktex/texmfs/install/tex/latex/psnfss/ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
-
-LaTeX Warning: Command \texttimes invalid in math mode on input line 156.
-
-Missing character: There is no Ö in font cmss10!
-<images/equilibrium.png, id=270, 494.84875pt x 175.65625pt>
-File: images/equilibrium.png Graphic file (type png)
-<use images/equilibrium.png>
-Package pdftex.def Info: images/equilibrium.png  used on input line 156.
-(pdftex.def)             Requested size: 171.21765pt x 60.77568pt.
-
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 156--156
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 36--36
 [][][][] 
  []
 
 [6
 
- <./images/equilibrium.png>]
-<images/BVP.png, id=301, 191.9672pt x 253.69781pt>
-File: images/BVP.png Graphic file (type png)
-<use images/BVP.png>
-Package pdftex.def Info: images/BVP.png  used on input line 183.
-(pdftex.def)             Requested size: 128.01979pt x 169.18124pt.
+]
+File: triangle1.pdf Graphic file (type pdf)
+<use triangle1.pdf>
+Package pdftex.def Info: triangle1.pdf  used on input line 36.
+(pdftex.def)             Requested size: 136.97203pt x 74.6595pt.
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 183--183
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 36--36
 [][][][] 
  []
 
 [7
 
- <./images/BVP.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 186.
-
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 223.
-
-LaTeX Warning: Command \texttimes invalid in math mode on input line 223.
-
-
-LaTeX Warning: Command \texttimes invalid in math mode on input line 223.
-
-
-LaTeX Warning: Command \texttimes invalid in math mode on input line 223.
-
-
-LaTeX Warning: Command \texttimes invalid in math mode on input line 223.
-
-Missing character: There is no Ö in font cmss10!
-Missing character: There is no Ö in font cmss10!
-
-Overfull \hbox (9.65407pt too wide) detected at line 223
- $[] \OT1/cmss/m/n/10 = []$  
- []
-
-File: images/BVP.png Graphic file (type png)
-<use images/BVP.png>
-Package pdftex.def Info: images/BVP.png  used on input line 223.
-(pdftex.def)             Requested size: 128.01979pt x 169.18124pt.
-
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 223--223
+]
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 50--50
 [][][][] 
  []
 
 [8
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 225.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 225.
-
-
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 245--245
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 50--50
 [][][][] 
  []
 
 [9
 
 ]
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 265--265
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 50--50
 [][][][] 
  []
 
 [10
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 267.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 267.
-
-
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 287--287
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 50--50
 [][][][] 
  []
 
 [11
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 289.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 289.
-
-
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 357--357
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 50--50
 [][][][] 
  []
 
 [12
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 359.
-
-<images/ICA.png, id=467, 644.4075pt x 398.48875pt>
-File: images/ICA.png Graphic file (type png)
-<use images/ICA.png>
-Package pdftex.def Info: images/ICA.png  used on input line 383.
-(pdftex.def)             Requested size: 171.21765pt x 105.87871pt.
-
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 383--383
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 64--64
 [][][][] 
  []
 
 [13
 
- <./images/ICA.png>]
+]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 385.
+LaTeX Warning: Citation 'pythm001' on page 14 undefined on input line 84.
 
-<images/AV_TV.png, id=499, 323.70938pt x 276.28218pt>
-File: images/AV_TV.png Graphic file (type png)
-<use images/AV_TV.png>
-Package pdftex.def Info: images/AV_TV.png  used on input line 411.
-(pdftex.def)             Requested size: 171.21765pt x 146.13374pt.
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 411--411
+LaTeX Warning: Citation 'pythm001' on page 14 undefined on input line 84.
+
+
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 84--84
 [][][][] 
  []
 
 [14
 
- <./images/AV_TV.png>]
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 436--436
+]
+
+LaTeX Warning: Citation 'pythm001' on page 15 undefined on input line 84.
+
+
+LaTeX Warning: Citation 'pythm001' on page 15 undefined on input line 84.
+
+
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 84--84
 [][][][] 
  []
 
@@ -1669,68 +1502,111 @@ Overfull \hbox (21.76004pt too wide) in paragraph at lines 436--436
 
 ]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 438.
+LaTeX Warning: Citation 'pythm001' on page 16 undefined on input line 84.
 
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 455--455
+LaTeX Warning: Citation 'pythm001' on page 16 undefined on input line 84.
+
+
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 84--84
 [][][][] 
  []
 
 [16
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 461.
- [17
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+08.
+ (/home/andrea/.miktex/texmfs/install/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 108--108
+[][][][] 
+ []
 
-] [18
+[17
 
- </home/andrea/.miktex/texmfs/install/tex/latex/beamer/beamericonarticle.pdf>]
+]
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 108--108
+[][][][] 
+ []
+
+[18
+
+]
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 108--108
+[][][][] 
+ []
+
+[19
+
+]
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 108--108
+[][][][] 
+ []
+
+[20
+
+]
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 108--108
+[][][][] 
+ []
+
+[21
+
+]
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 108--108
+[][][][] 
+ []
+
+[22
+
+]
 \tf@nav=\write7
-\openout7 = `AG_presentation.nav'.
+\openout7 = `"beamer_example (copy).nav"'.
 
 \tf@toc=\write8
-\openout8 = `AG_presentation.toc'.
+\openout8 = `"beamer_example (copy).toc"'.
 
 \tf@snm=\write9
-\openout9 = `AG_presentation.snm'.
+\openout9 = `"beamer_example (copy).snm"'.
 
- (AG_presentation.aux)
-Package rerunfilecheck Info: File `AG_presentation.out' has not changed.
-(rerunfilecheck)             Checksum: C4D23811FBD051B2CE4675972E3B59B6;1204.
-Package logreq Info: Writing requests to 'AG_presentation.run.xml'.
-\openout1 = `AG_presentation.run.xml'.
+ ("beamer_example (copy).aux")
+Package rerunfilecheck Info: File `"beamer_example (copy)".out' has not changed
+.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                "beamer_example (copy)"
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to '"beamer_example (copy)".run.xml'.
+\openout1 = `"beamer_example (copy).run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27705 strings out of 481629
- 543369 string characters out of 2918595
- 1050118 words of memory out of 3000000
- 43882 multiletter control sequences out of 15000+200000
- 469990 words of font info for 101 fonts, out of 3000000 for 9000
+ 26611 strings out of 481629
+ 523310 string characters out of 2918595
+ 1012057 words of memory out of 3000000
+ 42846 multiletter control sequences out of 15000+200000
+ 452093 words of font info for 85 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 138i,19n,139p,1927b,1693s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 138i,15n,139p,1891b,1142s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/andrea/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc} </home/andr
-ea/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1095.pk></home/an
-drea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/an
+ea/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk></home/an
 drea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/an
-drea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/and
-rea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/andr
-ea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/andr
-ea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.pfb></home/andre
-a/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/andre
-a/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/andrea
-/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/andrea/
-.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/andrea/.
-miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/andrea/.m
-iktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/andr
-ea/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvbo8a.pfb></home/andrea/.m
-iktex/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb></home/andrea/.miktex/
-texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on AG_presentation.pdf (18 pages, 801682 bytes).
+drea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/an
+drea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/an
+drea/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb></home/andrea/.
+miktex/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb></home/andrea/.miktex
+/texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on "beamer_example (copy).pdf" (22 pages, 190065 bytes).
 PDF statistics:
- 706 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
- 252 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 248 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
+ 67 words of extra memory for PDF output out of 10000 (max. 10000000)
 

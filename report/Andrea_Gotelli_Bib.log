@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  19 FEB 2021 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  21 FEB 2021 20:02
 entering extended mode
 **./Andrea_Gotelli_Bib.tex
 (Andrea_Gotelli_Bib.tex
@@ -469,6 +469,16 @@ Underfull \hbox (badness 1931) in paragraph at lines 47--48
 []|\OT1/cmr/m/n/12 Researcher (LS2N), Ecole
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+[]|\OT1/cmr/m/n/12 Researcher (DIBRIS),
+ []
+
+
+Underfull \hbox (badness 3088) in paragraph at lines 50--51
+\OT1/cmr/m/n/12 Universita degli studi di
+ []
+
 [1
 
 
@@ -493,13 +503,7 @@ l.17  \newpage
  [4
 
 ]
-Overfull \hbox (5.29388pt too wide) in paragraph at lines 49--51
-[]\OT1/cmr/m/n/12 Concerning continuum parallel robots, they consist in an asse
-mbly of slender beams connected
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5105) has occurred while \output is active []
 
  [5
 
@@ -531,20 +535,20 @@ Package rerunfilecheck Info: File `Andrea_Gotelli_Bib.out' has not changed.
 (rerunfilecheck)             Checksum: 60467C1E79591B4F684E814424D99434;533.
  ) 
 Here is how much of TeX's memory you used:
- 8072 strings out of 481629
- 119536 string characters out of 2918595
+ 8073 strings out of 481629
+ 119544 string characters out of 2918595
  429401 words of memory out of 3000000
- 24723 multiletter control sequences out of 15000+200000
+ 24724 multiletter control sequences out of 15000+200000
  410849 words of font info for 54 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 80i,10n,85p,994b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 80i,10n,85p,996b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
 </home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmcsc10.p
 fb></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pf
 b>
-Output written on Andrea_Gotelli_Bib.pdf (13 pages, 125627 bytes).
+Output written on Andrea_Gotelli_Bib.pdf (13 pages, 125897 bytes).
 PDF statistics:
  219 PDF objects out of 1000 (max. 8388607)
  42 named destinations out of 1000 (max. 500000)

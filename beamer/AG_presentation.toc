@@ -1,39 +1,39 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {1}{Introduction to CPR}{3}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {1}{1}{Serial_parallel_robots}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Serial_parallel_robots}{3}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {1}{2}{CPR}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{CPR}{4}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{Modelling of Continuum}{4}{0}{2}
+\beamer@sectionintoc {2}{Modelling of Continuum}{5}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {2}{1}{Geometric_modelling}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Geometric_modelling}{5}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {2}{2}{Rod_equilibrium}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Rod_equilibrium}{6}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {2}{3}{BVP}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{BVP}{7}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Methods}{7}{0}{3}
+\beamer@sectionintoc {3}{Methods}{8}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{1}{Shooting_method_statics}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Shooting_method_statics}{8}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{2}{Shooting_method_dynamics}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Shooting_method_dynamics}{9}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{3}{Non linear solver}{9}{0}{3}
+\beamer@subsectionintoc {3}{3}{Non linear solver}{10}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{4}{Strain_approach_intro}{10}{0}{3}
+\beamer@subsectionintoc {3}{4}{Strain_approach_intro}{11}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{5}{Strain_approach_deteails}{11}{0}{3}
+\beamer@subsectionintoc {3}{5}{Strain_approach_deteails}{12}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{6}{ICA_intro}{12}{0}{3}
+\beamer@subsectionintoc {3}{6}{ICA_intro}{13}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{7}{ICA_details}{13}{0}{3}
+\beamer@subsectionintoc {3}{7}{ICA_details}{14}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{Conclusions}{14}{0}{4}
+\beamer@sectionintoc {4}{Conclusions}{15}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{1}{Conclusions}{14}{0}{4}
+\beamer@subsectionintoc {4}{1}{Conclusions}{15}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{2}{Expected_work}{15}{0}{4}
+\beamer@subsectionintoc {4}{2}{Expected_work}{16}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{3}{Thanks}{16}{0}{4}
+\beamer@subsectionintoc {4}{3}{Thanks}{17}{0}{4}
