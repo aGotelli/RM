@@ -196,7 +196,7 @@
   					\item Geometrical considerations
   				\end{itemize}
   				\item Recursive solution
-  				\begin{itemize}			
+  				\begin{itemize}
   					\item Needs an intial guess
   					\item Evaluation on a cost function  
   					\begin{fleqn}
@@ -271,18 +271,16 @@
   				\item Modelling of a continuum body in space
   				\begin{itemize}
   					\item Internally actuated Cosserat beam
-  					\item With its configuration space $ \textit{C} = SE(3) \times \textit{S} $
-  				\end{itemize}
+  					\item In its dynamics
+  					\begin{align}
+  						\eta = \left( T^{-1}\dot{T} \right)^V && \xi = \left( T^{-1} {T}^{'} \right)^V
+  					\end{align}
+				\end{itemize}
   				\item From assumption on rod deformation
   				\begin{itemize}
   					\item Allowed $ \xi_a $, prohibited $ \xi_c $ twists
   					\item Strain generalized coordinates $ q_{[n\times1]}$
-  					\item Basis functions ${\Phi}_{\left[n_a \times n \right]} $
-  					\begin{equation}
-  						{\xi_a}_{\left(s , t \right)} = {\xi_{a0}}_{\left(s \right)} + {\Phi}_{\left(s \right)} {q}_{\left(t \right)}
-  					\end{equation}
   				\end{itemize}
-  				\item Configuration space discretization $ \textit{C} = SE(3) \times \mathbb{R}^n $
  			\end{itemize}
 		\end{frame}
 		
@@ -290,7 +288,7 @@
         \begin{frame}
         	\frametitle{Strain approach, Lagrangian model of continuum manipulator}
 			\begin{itemize}%[<+->]
-  				\item Strain Approach
+  				\item Lagrangian model of continuum
   				\begin{fleqn}
   				\begin{equation}
   					\begin{bmatrix}
@@ -439,14 +437,17 @@
         \begin{frame}
         	\frametitle{Expected work}
         	\begin{itemize}
-        		\item Method selection
+        		\item immediate terms: Method(s) selection
         		\begin{itemize}
         			\item Previusly presented 
-        			\item Combination
+        			\item One or combination
         		\end{itemize}
-        		\item Solve the modelling
+        		\item Short terms: Solve the modelling
   				\begin{itemize}%[<.->]
    					\item Rod statics
+        		\end{itemize}
+        		\item Long terms
+  				\begin{itemize}%[<.->]
    					\item Robot assembly
    					\item Visual interface
    					\item Robot dynamics
