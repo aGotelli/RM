@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  23 FEB 2021 22:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  25 FEB 2021 08:52
 entering extended mode
 **./AG_presentation.tex
 (AG_presentation.tex
@@ -1453,16 +1453,16 @@ Overfull \vbox (3.96696pt too high) detected at line 58
  <./images/serial_parall_robots.png>]
 File: images/serial_parall_robots.png Graphic file (type png)
 <use images/serial_parall_robots.png>
-Package pdftex.def Info: images/serial_parall_robots.png  used on input line 91
+Package pdftex.def Info: images/serial_parall_robots.png  used on input line 92
 .
 (pdftex.def)             Requested size: 171.21765pt x 176.28304pt.
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 91--91
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 92--92
 [][][][] 
  []
 
 
-Overfull \vbox (9.87943pt too high) detected at line 91
+Overfull \vbox (9.87943pt too high) detected at line 92
  []
 
 [4
@@ -1470,20 +1470,20 @@ Overfull \vbox (9.87943pt too high) detected at line 91
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 94.
+(hyperref)                removing `subscript' on input line 95.
 
 <images/rod_geometry.png, id=233, 626.34pt x 310.15875pt>
 File: images/rod_geometry.png Graphic file (type png)
 <use images/rod_geometry.png>
-Package pdftex.def Info: images/rod_geometry.png  used on input line 128.
+Package pdftex.def Info: images/rod_geometry.png  used on input line 129.
 (pdftex.def)             Requested size: 171.21765pt x 84.78516pt.
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 128--128
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 129--129
 [][][][] 
  []
 
 
-Overfull \vbox (24.56044pt too high) detected at line 128
+Overfull \vbox (24.56044pt too high) detected at line 129
  []
 
 [5
@@ -1491,27 +1491,27 @@ Overfull \vbox (24.56044pt too high) detected at line 128
  <./images/rod_geometry.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 130.
+(hyperref)                removing `subscript' on input line 131.
 
 
-LaTeX Warning: Command \texttimes invalid in math mode on input line 156.
+LaTeX Warning: Command \texttimes invalid in math mode on input line 157.
 
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
-56.
+57.
 (/home/andrea/.miktex/texmfs/install/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 
-LaTeX Warning: Command \texttimes invalid in math mode on input line 156.
+LaTeX Warning: Command \texttimes invalid in math mode on input line 157.
 
 Missing character: There is no Ö in font cmss10!
 <images/equilibrium.png, id=270, 494.84875pt x 175.65625pt>
 File: images/equilibrium.png Graphic file (type png)
 <use images/equilibrium.png>
-Package pdftex.def Info: images/equilibrium.png  used on input line 156.
+Package pdftex.def Info: images/equilibrium.png  used on input line 157.
 (pdftex.def)             Requested size: 171.21765pt x 60.77568pt.
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 156--156
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 157--157
 [][][][] 
  []
 
@@ -1521,10 +1521,10 @@ Overfull \hbox (21.76004pt too wide) in paragraph at lines 156--156
 <images/BVP.png, id=301, 191.9672pt x 253.69781pt>
 File: images/BVP.png Graphic file (type png)
 <use images/BVP.png>
-Package pdftex.def Info: images/BVP.png  used on input line 183.
+Package pdftex.def Info: images/BVP.png  used on input line 184.
 (pdftex.def)             Requested size: 128.01979pt x 169.18124pt.
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 183--183
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 184--184
 [][][][] 
  []
 
@@ -1533,39 +1533,39 @@ Overfull \hbox (21.76004pt too wide) in paragraph at lines 183--183
  <./images/BVP.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 186.
+(hyperref)                removing `subscript' on input line 187.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 186.
+(hyperref)                removing `subscript' on input line 187.
 
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 223.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 224.
 
-LaTeX Warning: Command \texttimes invalid in math mode on input line 223.
-
-
-LaTeX Warning: Command \texttimes invalid in math mode on input line 223.
+LaTeX Warning: Command \texttimes invalid in math mode on input line 224.
 
 
-LaTeX Warning: Command \texttimes invalid in math mode on input line 223.
+LaTeX Warning: Command \texttimes invalid in math mode on input line 224.
 
 
-LaTeX Warning: Command \texttimes invalid in math mode on input line 223.
+LaTeX Warning: Command \texttimes invalid in math mode on input line 224.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 224.
 
 Missing character: There is no Ö in font cmss10!
 Missing character: There is no Ö in font cmss10!
 
-Overfull \hbox (9.65407pt too wide) detected at line 223
+Overfull \hbox (9.65407pt too wide) detected at line 224
  $[] \OT1/cmss/m/n/10 = []$  
  []
 
 File: images/BVP.png Graphic file (type png)
 <use images/BVP.png>
-Package pdftex.def Info: images/BVP.png  used on input line 223.
+Package pdftex.def Info: images/BVP.png  used on input line 224.
 (pdftex.def)             Requested size: 128.01979pt x 169.18124pt.
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 223--223
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 224--224
 [][][][] 
  []
 
@@ -1574,21 +1574,21 @@ Overfull \hbox (21.76004pt too wide) in paragraph at lines 223--223
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 225.
+(hyperref)                removing `subscript' on input line 226.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 225.
+(hyperref)                removing `subscript' on input line 226.
 
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 245--245
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 246--246
 [][][][] 
  []
 
 [9
 
 ]
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 265--265
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 266--266
 [][][][] 
  []
 
@@ -1597,14 +1597,14 @@ Overfull \hbox (21.76004pt too wide) in paragraph at lines 265--265
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 267.
+(hyperref)                removing `subscript' on input line 268.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 267.
+(hyperref)                removing `subscript' on input line 268.
 
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 285--285
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 287--287
 [][][][] 
  []
 
@@ -1613,14 +1613,14 @@ Overfull \hbox (21.76004pt too wide) in paragraph at lines 285--285
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 287.
+(hyperref)                removing `subscript' on input line 289.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 287.
+(hyperref)                removing `subscript' on input line 289.
 
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 355--355
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 357--357
 [][][][] 
  []
 
@@ -1629,15 +1629,15 @@ Overfull \hbox (21.76004pt too wide) in paragraph at lines 355--355
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 357.
+(hyperref)                removing `subscript' on input line 359.
 
 <images/ICA.png, id=467, 644.4075pt x 398.48875pt>
 File: images/ICA.png Graphic file (type png)
 <use images/ICA.png>
-Package pdftex.def Info: images/ICA.png  used on input line 381.
+Package pdftex.def Info: images/ICA.png  used on input line 383.
 (pdftex.def)             Requested size: 171.21765pt x 105.87871pt.
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 381--381
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 383--383
 [][][][] 
  []
 
@@ -1646,22 +1646,22 @@ Overfull \hbox (21.76004pt too wide) in paragraph at lines 381--381
  <./images/ICA.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 383.
+(hyperref)                removing `subscript' on input line 385.
 
 <images/AV_TV.png, id=499, 323.70938pt x 276.28218pt>
 File: images/AV_TV.png Graphic file (type png)
 <use images/AV_TV.png>
-Package pdftex.def Info: images/AV_TV.png  used on input line 409.
+Package pdftex.def Info: images/AV_TV.png  used on input line 411.
 (pdftex.def)             Requested size: 171.21765pt x 146.13374pt.
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 409--409
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 411--411
 [][][][] 
  []
 
 [14
 
  <./images/AV_TV.png>]
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 434--434
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 437--437
 [][][][] 
  []
 
@@ -1670,10 +1670,10 @@ Overfull \hbox (21.76004pt too wide) in paragraph at lines 434--434
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 436.
+(hyperref)                removing `subscript' on input line 439.
 
 
-Overfull \hbox (21.76004pt too wide) in paragraph at lines 456--456
+Overfull \hbox (21.76004pt too wide) in paragraph at lines 460--460
 [][][][] 
  []
 
@@ -1681,7 +1681,7 @@ Overfull \hbox (21.76004pt too wide) in paragraph at lines 456--456
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 462.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 466.
  [17
 
 ] [18
@@ -1706,7 +1706,7 @@ Package logreq Info: Writing requests to 'AG_presentation.run.xml'.
 Here is how much of TeX's memory you used:
  27705 strings out of 481629
  543369 string characters out of 2918595
- 1050118 words of memory out of 3000000
+ 1049118 words of memory out of 3000000
  43882 multiletter control sequences out of 15000+200000
  469990 words of font info for 101 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
@@ -1728,7 +1728,7 @@ iktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/andr
 ea/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvbo8a.pfb></home/andrea/.m
 iktex/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb></home/andrea/.miktex/
 texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on AG_presentation.pdf (18 pages, 801127 bytes).
+Output written on AG_presentation.pdf (18 pages, 801220 bytes).
 PDF statistics:
  706 PDF objects out of 1000 (max. 8388607)
  61 named destinations out of 1000 (max. 500000)

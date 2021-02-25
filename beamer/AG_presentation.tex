@@ -23,7 +23,7 @@
 	\frametitle{Index}
 	\begin{enumerate}
 		\item Introduction to Continuum Parallel Robots (CPR)
-   		\item Modelling of Continuum
+   		\item Modelling of deformable links
    		\item Methods
    		\item Conclusions
 	\end{enumerate}	
@@ -44,7 +44,7 @@
   				\end{itemize}\vfill
   				\item Parallel robots
   				\begin{itemize}%[<.->]
-   					\item Less inertia, high velocities
+   					\item Less inertia, high speed
    					\item More joints involved
   				\end{itemize}\vfill
  			\end{itemize}
@@ -63,20 +63,21 @@
 			\begin{columns}
 			\column{0.5\textwidth}
 			\begin{itemize}%[<+->]
-  				\item Continuum parallel robots 
+  				\item Advantages
   				\begin{itemize}%[<.->]
-   					\item May anhance safety
+   					\item May enhance safety
    					\item Cheaper components 
    					\item Possible to miniturize
   				\end{itemize}
-  				\item Model and stability problems
+  				\item Drawbacks
   				\begin{itemize}%[<.->]
    					\item More unstable configurations
    					\item Lower payload
    					\item Not analytical solution
   				\end{itemize}
-  				\item Definition of a general simulator
+  				\item Intention
   				\begin{itemize}
+  					\item General simulator
   					\item Gazebo plugins
   				\end{itemize}
  			\end{itemize}
@@ -281,6 +282,7 @@
   					\item Allowed $ \xi_a $, prohibited $ \xi_c $ twists
   					\item Strain generalized coordinates $ q_{[n\times1]}$
   				\end{itemize}
+  				\item Define its dynamic model
  			\end{itemize}
 		\end{frame}
 		
@@ -323,7 +325,7 @@
   				\end{fleqn}
   				\item Virtual serial mechanism analogy			
   				\begin{itemize}
-  					\item Lagrangian model
+  					\item The Lagrangian model
   					\begin{equation}
   						\begin{bmatrix}
   						{F}_{0} \\
@@ -356,7 +358,7 @@
 		
 		\subsection{ICA_intro}
         \begin{frame}
-        	\frametitle{Introduction to the Isogeometric Collocation Method}
+        	\frametitle{Introduction to the Isogeometric Collocation Analysis}
 			\begin{columns}
 			\column{0.5\textwidth}			
 			\begin{itemize}%[<+->]
@@ -382,7 +384,7 @@
 		
 		\subsection{ICA_details}
         \begin{frame}
-        	\frametitle{Properties of the Isogeometric Collocation Method}
+        	\frametitle{Properties of the Isogeometric Collocation Analysis}
         	\begin{columns}
 			\column{0.5\textwidth}
 			\begin{itemize}%[<+->]
@@ -419,10 +421,11 @@
         			\item Parallel robots
         			\item Continuum parallel robots
         		\end{itemize}
-        		\item Model of continuum
+        		\item Model of deformable links
        		 	\begin{itemize}
         			\item Geometric
         			\item Equilibrium
+        			\item Assembly
         		\end{itemize}
         		\item Methods
         		\begin{itemize}
@@ -437,7 +440,8 @@
         \begin{frame}
         	\frametitle{Expected work}
         	\begin{itemize}
-        		\item immediate terms: Method(s) selection
+        		\item A Gazebo Simulator for Continuum Parallel Robots
+        		\item Immediate terms: Method(s) selection
         		\begin{itemize}
         			\item Previusly presented 
         			\item One or combination
