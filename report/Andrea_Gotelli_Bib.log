@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  21 FEB 2021 20:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  3 MAR 2021 20:29
 entering extended mode
 **./Andrea_Gotelli_Bib.tex
 (Andrea_Gotelli_Bib.tex
@@ -519,14 +519,14 @@ Underfull \vbox (badness 2158) has occurred while \output is active []
 [9] (Andrea_Gotelli_Bib.bbl [10
 
 ]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 6
-9.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
+7.
 
 (/home/andrea/.miktex/texmfs/install/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
  [11
 
 ]) [12]
@@ -535,10 +535,10 @@ Package rerunfilecheck Info: File `Andrea_Gotelli_Bib.out' has not changed.
 (rerunfilecheck)             Checksum: 60467C1E79591B4F684E814424D99434;533.
  ) 
 Here is how much of TeX's memory you used:
- 8073 strings out of 481629
- 119544 string characters out of 2918595
+ 8072 strings out of 481629
+ 119526 string characters out of 2918595
  429401 words of memory out of 3000000
- 24724 multiletter control sequences out of 15000+200000
+ 24723 multiletter control sequences out of 15000+200000
  410849 words of font info for 54 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  80i,10n,85p,996b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -548,9 +548,9 @@ fb></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></home/andrea/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pf
 b>
-Output written on Andrea_Gotelli_Bib.pdf (13 pages, 125897 bytes).
+Output written on Andrea_Gotelli_Bib.pdf (13 pages, 117070 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
+ 204 PDF objects out of 1000 (max. 8388607)
  42 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
